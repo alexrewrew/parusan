@@ -24,7 +24,7 @@ body{
 	color:#323A45;
 	font-weight:300;
 	font-size:16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Gotham Pro', 'Open Sans', sans-serif;
 	line-height:28px;
     overflow-y: scroll;
 }
@@ -131,7 +131,7 @@ address {
 
 input, button, select, textarea {
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Gotham Pro', 'Open Sans', sans-serif;
 	outline: 0;
 	
 	-webkit-appearance: none;
@@ -240,7 +240,7 @@ h6{
 	margin:0 0 20px 0;
 	color:#0d7f3e;
 	font-weight:600;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Gotham Pro', 'Open Sans', sans-serif;
 	line-height:1.5em;
 }
 

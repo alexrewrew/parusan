@@ -43,11 +43,9 @@
                     <!-- Standard Menu -->
                     <nav id="menu">
                         <ul id="menu-nav" class="sf-js-enabled sf-arrows">
-                            <li><a href="index.html">Acasă</a></li>
-                            <li><a href="second.html">Despre căderea părului</a></li>
-                            <li><a href="third.html">Gama Parusan</a></li>
-                            <li><a href="fourth.html">Comandă</a></li>
-                            <li><a href="fifth.html">Contact</a></li>
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="drop.html">Про випадіння волосся</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -59,11 +57,9 @@
             <div class="row">
                 <div class="span12">
                     <ul id="menu-nav-mobile">
-                        <li><a href="index.html">Acasă</a></li>
-                        <li><a href="second.html">Despre căderea părului</a></li>
-                        <li><a href="third.html">Gama Parusan</a></li>
-                        <li><a href="fourth.html">Comandă</a></li>
-                        <li><a href="fifth.html">Contact</a></li>
+                        <li><a href="index.html">Головна</a></li>
+                            <li><a href="drop.html">Про випадіння волосся</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,20 +68,33 @@
     <!-- End Header -->
     <!-- Start Section Title -->
     <section id="title-page">
-        <h2>Comandă</h2> <span class="arrow"></span> </section>
+        <h2>Контакти</h2> <span class="arrow"></span> </section>
     <!-- End Section Ttile -->
     <!-- Start Columns -->
     <section id="content" class="container">
         <div class="row">
-            <div class="span12">
-                <div style="width: 90%; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                    <a href="http://farmaciasilva.ro/produse-profesionale-ingrijire-par/6411-parusan-tonic-energizant-pentru-femei-x-200-ml.html" target="_blank"><img style="width: 170px;" src="frontend/img/04/farmacia-silva.png" alt=""></a>
-                    <a href="https://comenzi.farmaciatei.ro/ingrijire_personala/ingrijire_par/sampon/tonic_energizant_pentru_femei_parusan_200_ml_theiss_naturwaren-p10048982" target="_blank"><img style="width: 170px;" src="frontend/img/04/farmacia-tei.png" alt=""></a>
-                    <a href="http://www.remediumfarm.ro/index.php?route=product/product&amp;product_id=10315" target="_blank"><img style="width: 170px;" src="frontend/img/04/remedium-farm.jpg" alt=""></a>
-                    <a href="http://www.miracolulplantelor.ro/parusan-sampon-stimulator-200ml-zdrovit.html" target="_blank"><img style="width: 170px;" src="frontend/img/04/miracolul-plantelor.svg" alt=""></a>
-                    <a href="http://www.suplimentealimentare247.ro/parusan-sampon-stimulator-200-ml-sampon" target="_blank"><img style="width: 120px;" src="frontend/img/04/suplimente-alimentare.png" alt=""></a>
+            <div class="span2"></div>
+            <div class="span8">
+                <div class="row">
+                    <div id="response"></div>
+                    <div class="span4">
+                        <form id="contact-form" class="contact-form" action="">
+                            <p class="contact-name">
+                                <input id="contact_name" type="text" placeholder="Ваше ім'я" value="" name="name"> </p>
+                            <p class="contact-email">
+                                <input id="contact_email" type="text" placeholder="E-mail адреса" value="" name="email"> </p>
+                            <p class="contact-message">
+                                <textarea id="contact_message" placeholder="Повідомлення" name="message" rows="15" cols="40"></textarea>
+                            </p>
+                            <p class="contact-submit"> <a id="contact-submit" class="submit" href="">Відправити листа</a> </p>
+                        </form>
+                    </div>
+                    <div class="span4 producator">
+                        <p><strong>Producător</strong>: Dr.Theiss Naturwaren GmbH.</p>
+                        <p><strong>Adresă</strong>: Michelinstraße 10, 66424 Homburg, Germania</p> <img style="width: 100%; max-width: 250px; height: auto;" src="frontend/img/logo.png" alt="logo"> </div>
                 </div>
             </div>
+            <div class="span2"></div>
         </div>
     </section>
     <!-- End Columns -->
@@ -109,10 +118,7 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <p class="credits">© 2016 PARUSAN. Toate drepturile rezervate.</p>
-                    <p>powered by
-                        <a href="http://volta.one/" title="Web development - Balistic Media"><img src="frontend/img/balistic-icon-transparent.png" alt="Balistic Media" title="Web development - Balistic Media" style="border:0"></a>
-                    </p>
+                    <p class="credits">© 2016 PARUSAN. Всі права захищені.</p>
                 </div>
             </div>
         </div>
@@ -142,6 +148,9 @@
     <!-- Google Font -->
     <link href="frontend/css/css" rel="stylesheet" type="text/css" property="stylesheet">
     <link rel="stylesheet" href="frontend/css/jplayer.blue.monday.css">
+    <!-- parusan style -->
+    <link href="frontend/fonts/fonts.css" rel="stylesheet" property="stylesheet">
+    <link href="frontend/css/style-core.css" rel="stylesheet" property="stylesheet">
     <!-- Js -->
     <script src="frontend/js/jquery.min.js"></script>
     <!-- jQuery Core -->
