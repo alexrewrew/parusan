@@ -58,8 +58,8 @@
                 <div class="span12">
                     <ul id="menu-nav-mobile">
                         <li><a href="index.html">Головна</a></li>
-                            <li><a href="drop.html">Про випадіння волосся</a></li>
-                            <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="drop.html">Про випадіння волосся</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,20 +78,22 @@
                 <div class="row">
                     <div id="response"></div>
                     <div class="span4">
-                        <form id="contact-form" class="contact-form" action="">
+                        <form id="contact-form" class="contact-form" action="send.php" method= "POST">
                             <p class="contact-name">
-                                <input id="contact_name" type="text" placeholder="Ваше ім'я" value="" name="name"> </p>
+                                <input id="name" type="text" placeholder="Ваше ім'я" value="" name="name"> </p>
                             <p class="contact-email">
-                                <input id="contact_email" type="text" placeholder="E-mail адреса" value="" name="email"> </p>
+                                <input id="email" type="text" placeholder="E-mail адреса" value="" name="email"> </p>
                             <p class="contact-message">
-                                <textarea id="contact_message" placeholder="Повідомлення" name="message" rows="15" cols="40"></textarea>
+                                <textarea id="message" placeholder="Повідомлення" name="message" rows="15" cols="40"></textarea>
                             </p>
-                            <p class="contact-submit"> <a id="contact-submit" class="submit" href="">Відправити листа</a> </p>
+                            <p class="contact-submit"> <button type="submit" id="contact-submit" class="submit" href="">Відправити листа</button> </p>
                         </form>
                     </div>
                     <div class="span4 producator">
-                        <p><strong>Producător</strong>: Dr.Theiss Naturwaren GmbH.</p>
-                        <p><strong>Adresă</strong>: Michelinstraße 10, 66424 Homburg, Germania</p> <img style="width: 100%; max-width: 250px; height: auto;" src="frontend/img/logo.png" alt="logo"> </div>
+                        <p><strong>Виробник</strong>: Др. Тайсс Натурварен ГмбХ, Міхелінштрассе 10, 66424 Хомбург, Німеччина.</p><img style="width: 100%; max-width: 221px; height: auto;" src="frontend/img/logo.png" alt="logo">
+                        <p><strong>Імпортер</strong>: ТОВ «Натурпродукт-Вега», вул. Софіївська, 1, Софіївська Борщагівка, Київська обл., 08131, Україна</p>
+                        <img src="frontend/img/Awards.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="span2"></div>
@@ -175,10 +177,11 @@
     <script src="frontend/js/jquery.flickr.min.js"></script>
     <!-- Flickr -->
     <script src="frontend/js/plugins.js"></script>
-    <!-- Contains: jQuery Easing, jQuery ScrollTo -->
+    <!-- Contains: jQuery Easing, jQuery ScrollTo 
     <script src="frontend/js/main.js"></script>
-    <!-- Default JS -->
     <script src="frontend/js/main(1).js"></script>
+    <!-- Default JS -->
+    
     <script src="frontend/js/jquery.jplayer.min.js"></script>
     <!-- jQuery library -->
     <script src="frontend/js/media.js"></script>

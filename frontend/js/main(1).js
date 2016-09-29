@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+/*jQuery(document).ready(function($) {
   $("#contact-submit").click(function(){
 		var nume = $("#contact_name").val();
 		var email = $("#contact_email").val();
@@ -13,4 +13,4 @@ jQuery(document).ready(function($) {
 		  })
 		}
   });
-});
+});*/

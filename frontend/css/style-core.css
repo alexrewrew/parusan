@@ -217,3 +217,21 @@ gray_h h2 {
 #contact-form .submit:hover {
     background: #323A45;
 }
+
+/**/
+.box img {
+    margin-bottom: 30px;
+}
+.producator p {
+    margin-bottom: 10px;
+}
+.producator img {
+    margin-bottom: 20px;
+}
+.box_min img {
+    width: 100px;
+}
+
+button {
+    border: none;
+}
