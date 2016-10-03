@@ -27,7 +27,6 @@ strtolower($email)))
 "<center>Поверніться <a 
 href='javascript:history.back(1)'><B>назад</B></a>. Ви 
 вказали невірні данні!"; 
- 
   } 
  
  else 
@@ -58,15 +57,10 @@ fclose($f);
  
 // Выводим сообщение пользователю 
  
-print "<script language='Javascript'><!-- 
-function reload() {location = \"$backurl\"}; setTimeout('reload()', 1000); 
-//--></script> 
- 
-$msg 
- 
-<p>Повідомлення відправлено! Зачекайте, Зараз ви будуте перенаправлені на головну сторінку...</p>";  
+header('Location: http://www.volta.one/assets/dev/parusan/');
+     
 exit; 
  
  } 
  
-?>
+?> 

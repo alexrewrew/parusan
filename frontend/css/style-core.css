@@ -219,6 +219,9 @@ gray_h h2 {
 }
 
 /**/
+.box {
+    cursor:auto;
+}
 .box img {
     margin-bottom: 30px;
 }
