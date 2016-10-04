@@ -23,7 +23,7 @@ if(!empty($_POST)){
 	$arUsers = array(
 		array(
 			"NAME"=>"PARUSAN",
-			"EMAIL"=>"parusan@naturprodukt.ua"
+			"EMAIL"=>"alexrew2012@gmail.com"
 		)
 	);
     
@@ -33,7 +33,7 @@ if(!empty($_POST)){
     $message .= '<b>Повідомлення:</b><br/>'.$_POST['message'].'<br/><br/>';
     
 	foreach ($arUsers as $Item){
-		$r = send_mime_mail("PARUSAN", "parusan@naturprodukt.ua", $Item['NAME'], $Item['EMAIL'], 'utf-8', 'utf-8', "Повідомлення на сайті PARUSAN", $message);
+		$r = send_mime_mail("PARUSAN", "alexrew2012@gmail.com", $Item['NAME'], $Item['EMAIL'], 'utf-8', 'utf-8', "Повідомлення на сайті PARUSAN", $message);
 	}
 }	
 ?>
