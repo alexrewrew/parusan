@@ -1,66 +1,39 @@
-<? 
-// ----------------------------конфигурация-------------------------- // 
- 
-$adminemail="admin@site.ua";  // e-mail админа 
-$date=date("d.m.y"); // число.месяц.год  
-$time=date("H:i"); // часы:минуты:секунды  
-$backurl="http://parusan/index.html";  // На какую страничку переходит после отправки письма 
- 
-//---------------------------------------------------------------------- // 
-   
- 
-// Принимаем данные с формы 
- 
-$name=$_POST['name'];  
-$email=$_POST['email'];  
-$msg=$_POST['message']; 
-  
- 
-// Проверяем валидность e-mail 
- 
-if (!preg_match("|^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})|is", 
-strtolower($email))) 
- 
- { 
- 
-  echo 
-"<center>Поверніться <a 
-href='javascript:history.back(1)'><B>назад</B></a>. Ви 
-вказали невірні данні!"; 
-  } 
- 
- else 
- 
- {  
- 
-$msg="  
- 
-<p>Имя: $name</p>  
-<p>E-mail: $email</p>   
-<p>Сообщение: $msg</p>   
-"; 
- 
- // Отправляем письмо админу  
- 
-mail("$adminemail", "$date $time Повідомлення 
-від $name", "$msg");   
- 
-// Сохраняем в базу данных 
- 
-$f = fopen("message.txt", "a+"); 
- 
-fwrite($f," \n $date $time Повідомлення від $name"); 
-fwrite($f,"\n $msg ");  
-fwrite($f,"\n ---------------");  
-fclose($f); 
-  
- 
-// Выводим сообщение пользователю 
- 
-header('Location: http://www.volta.one/assets/dev/parusan/');
-     
-exit; 
- 
- } 
- 
-?> 
+<?php
+function mime_header_encode($str, $data_charset = '', $send_charset = '') {
+	if($data_charset != $send_charset) {
+	$str = iconv($data_charset, $send_charset, $str);
+	}
+	return '=?' . $send_charset . '?B?' . base64_encode($str) . '?=';
+} 
+
+
+function send_mime_mail($name_from, $email_from, $name_to, $email_to, $data_charset, $send_charset, $subject, $body){ 
+	$to = mime_header_encode($name_to, $data_charset, $send_charset).' <' . $email_to . '>';
+	$subject = mime_header_encode($subject, $data_charset, $send_charset);
+	$from =  mime_header_encode($name_from, $data_charset, $send_charset).' <' . $email_from . '>';
+	if($data_charset != $send_charset) {
+		$body = iconv($data_charset, $send_charset, $body);
+	}
+	$headers = "From: $from\r\n";
+	$headers .= "Content-type: text/html; charset=$send_charset\r\n";
+	return mail($to, $subject, $body, $headers); 
+}
+
+if(!empty($_POST)){
+	$arUsers = array(
+		array(
+			"NAME"=>"PARUSAN",
+			"EMAIL"=>"parusan@naturprodukt.ua"
+		)
+	);
+    
+    $message = '';
+    $message .= "<b>Ім'я:</b><br/>".$_POST['name']."<br/><br/>";
+    $message .= '<b>E-mail:</b><br/>'.$_POST['email'].'<br/><br/>';
+    $message .= '<b>Повідомлення:</b><br/>'.$_POST['message'].'<br/><br/>';
+    
+	foreach ($arUsers as $Item){
+		$r = send_mime_mail("PARUSAN", "parusan@naturprodukt.ua", $Item['NAME'], $Item['EMAIL'], 'utf-8', 'utf-8', "Повідомлення на сайті PARUSAN", $message);
+	}
+}	
+?>
