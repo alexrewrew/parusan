@@ -70,8 +70,6 @@
     <section id="carousel" class="owl-carousel">
         <div class="item"><img src="frontend/img/01/Slide_1.jpg" alt="PARUSAN">
             <h2>PARUSAN<br>проти випадіння волосся</h2></div>
-        <div class="item"><img src="frontend/img/01/Slide_2.jpg" alt="PARUSAN"></div>
-        <div class="item"><img src="frontend/img/01/Slide_3.jpg" alt="PARUSAN"></div>
     </section>
     <!-- End Slider -->
     <!-- Start Intro Box -->
@@ -113,20 +111,17 @@
         <div class="container">
             <div class="row">
                 <div class="span4">
-                    <a class="box box_min">
-                       <img src="frontend/img/ico/Index_icon_1.png" alt="">
+                    <a class="box box_min"> <img src="frontend/img/ico/Icon-01.svg" onerror="this.src='frontend/img/ico/Index_icon_1.png'; this.onerror=null;" alt="Іконка">
                         <p>стимулює кровообіг шкіри голови</p>
                     </a>
                 </div>
                 <div class="span4">
-                    <a class="box box_min">
-                       <img src="frontend/img/ico/Index_icon_2.png" alt="">
+                    <a class="box box_min"> <img src="frontend/img/ico/Icon-02.svg" onerror="this.src='frontend/img/ico/Index_icon_2.png'; this.onerror=null;" alt="Іконка">
                         <p>сприяє глибокому проникненню корисних речовин до шкіри голови</p>
                     </a>
                 </div>
                 <div class="span4">
-                    <a class="box box_min">
-                       <img src="frontend/img/ico/Index_icon_3.png" alt="">
+                    <a class="box box_min"> <img src="frontend/img/ico/Icon-03.svg" onerror="this.src='frontend/img/ico/Index_icon_3.png'; this.onerror=null;" alt="Іконка">
                         <p>зупиняє випадіння волосся</p>
                     </a>
                 </div>
@@ -281,9 +276,11 @@
     <script src="frontend/plugins/owl-carousel/owl.carousel.min.js"></script>
     <script>
         $('#carousel').owlCarousel({
-            loop: true
-            , margin: 10
-            , nav: true
+            margin: 10
+            , nav: false
+            , mouseDrag: false
+            , touchDrag: false
+            , pullDrag: false
             , items: 1
             , navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>']
         })

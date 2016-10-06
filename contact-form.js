@@ -34,7 +34,7 @@ $(document).ready(function () {
                 data: {name: name, email: email, message: message},
                 success: function (data) {
                     if (data == "") {
-                        window.location.href = "http://parusan/";//edit start page of site
+                        window.location.href = "index.html";//edit start page of site
                     }
                 }
             });
