@@ -113,7 +113,7 @@ header {
     left: 52px;
     text-align: left;
     color: #0d7f3e;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     font-family: 'Gotham Pro';
     line-height: 1.2;
     font-size: 30px;
@@ -237,4 +237,13 @@ gray_h h2 {
 
 button {
     border: none;
+}
+
+.send_success{
+    display: none;
+    color: #0d7f3e;
+}
+.send_error {
+    display: none;
+    color: red;
 }
