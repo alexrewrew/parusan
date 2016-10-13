@@ -23,7 +23,7 @@ if(!empty($_POST)){
 	$arUsers = array(
 		array(
 			"NAME"=>"PARUSAN",
-			"EMAIL"=>"alexrew2012@gmail.com"
+			"EMAIL"=>"parusan@naturprodukt.ua"
 		)
 	);
     
