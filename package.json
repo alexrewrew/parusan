@@ -1,0 +1,25 @@
+{
+  "name": "parusan",
+  "version": "1.0.0",
+  "description": "parusan new site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrewrew/parusan.git"
+  },
+  "author": "rew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrewrew/parusan/issues"
+  },
+  "homepage": "https://github.com/alexrewrew/parusan#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.11"
+  }
+}

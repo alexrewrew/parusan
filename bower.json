@@ -1,0 +1,21 @@
+{
+  "name": "parusan",
+  "description": "parusan new site",
+  "main": "index.js",
+  "authors": [
+    "rew"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alexrewrew/parusan",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "Font-Awesome#^4.7.0",
+    "bootstrap": "^3.3.7"
+  }
+}
