@@ -1,0 +1,16 @@
+/*VARIABLES */
+/* MIXINS */
+/* main styles */
+body {
+  overflow-y: scroll;
+  background: #fff;
+  font-family: "Circe";
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4C4C4C; }
+
+header {
+  background: url("../img/head-back.png") no-repeat center;
+  background-size: cover; }

@@ -16,6 +16,14 @@
   ],
   "dependencies": {
     "font-awesome": "Font-Awesome#^4.7.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "modernizr": "^3.3.1",
+    "normalize-css": "normalize.css#^5.0.0",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "jquery": "^3.1.1",
+    "jquery-migrate": "^3.0.0",
+    "jquery-mousewheel": "^3.1.13",
+    "smoothscroll-for-websites": "^1.4.5"
   }
 }
