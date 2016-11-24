@@ -7,12 +7,14 @@ $c-gray: #CDCDCD; //hard gray
 $d-gray: #BABABA; //hard middle gray
 $font: 'Circe'; //main font
 $white: #fff;
+$a-green:#13b156;
+$b-green:#16a754;
+$c-green:#20DF71;
 
 /* MIXINS */
 @mixin transition { //transition property
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
-  /*-ms-transition: all 0.4s ease;*/
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -35,7 +37,249 @@ body {
   color: $text;
 }
 
+a {
+  @include transition;
+  color: $white;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button {
+  cursor: pointer;
+  @include transition;
+  @include regular-text(700, 1.625em);
+  background:$a-green;
+  display: inline-block;
+  text-align: center;
+  min-width: 292px;
+  margin-bottom: 15px;
+  padding: {
+    top:10px;
+    bottom:13px;
+  };
+  &:hover {
+    background: $c-green;
+    color: $white;
+  }
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 49px;
+  right: 63px;
+  z-index: 3333;
+}
+
+/* BURGER ICON */
+
+/* Icon 1 */
+
+#nav-icon {
+  width: 40px;
+  height: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  @include transition;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: $white;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#nav-icon.nav-down span {
+  background: $head-text;
+}
+
+/*#nav-icon.nav-down.opened span {
+  background: $white;
+}*/
+
+/* Icon 3 */
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon.open span {
+  background: $white;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+  z-index: 3333;
+}
+
+/* COLLAPSED MENU */
+.main_menu {
+  position: fixed;
+  right:-1000px;
+  top:0;
+  bottom:0;
+  width: 50%;
+  height: 100vh;
+  z-index: 2222;
+  @include transition;
+  background: $b-green;
+  padding: {
+    top:0;
+    bottom:0;
+    right:0;
+    left: 15.3%;
+  };
+}
+
+.opened {
+  right:0;
+}
+
+.menu_list {
+  margin: {
+    top:0;
+    left:0;
+    right:0;
+    bottom: 58px;
+  };
+  padding: 0;
+  list-style:none;
+  li {
+    padding: 0;
+    margin: {
+      top:0;
+      left:0;
+      right:0;
+      bottom:6px;
+    };
+    @include regular-text(700, 1.500em);
+    a {
+      border-bottom: 2px solid transparent;
+      &:hover {
+        color:$white;
+        border-bottom: 3px solid $white;
+      }
+    }
+  }
+}
+.menu_social {
+  padding: 0;
+  margin: 0;
+  list-style:none;
+  li {
+    padding: 0;
+    margin: {
+      right:33px;
+    };
+    display: inline-block;
+    a {
+      font-size: 2.25em;
+      &:hover {
+        color: $c-green;
+      }
+    }
+  }
+}
+
+/* JUMBOTRON */
+
 header {
   background: url("../img/head-back.png") no-repeat center;
   background-size: cover;
+  position: relative;
+  padding: {
+    top:50px;
+    bottom: 106px;
+  };
+}
+
+.lead_text {
+  @include regular-text(600, 2em);
+  line-height: 1.31;
+  letter-spacing: 0.9px;
+  color: $white;
+  border-right: 2px solid $white;
+  margin: {
+    right:36px;
+    top:121px;
+    bottom:73px;
+    left:0;
+  };
+}
+.arrow_down {
+  position: absolute;
+  bottom:0;
+  right: 58px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 56px;
+  text-align: center;
+  @include transition;
+  a {
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    padding: {
+      top:50px;
+      bottom:45px;
+    };
+    img {
+      @include transition;
+      position: relative;
+      top:0;
+    }
+    &:hover {
+      background: rgba(60, 60, 60, 0.2);
+    }
+    &:hover img {
+      top:20px;
+    }
+  }
+
 }
