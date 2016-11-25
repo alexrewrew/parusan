@@ -11,14 +11,49 @@ body {
   font-stretch: normal;
   color: #4C4C4C; }
 
+/* headers */
+h2 {
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 2.25em;
+  font-style: normal;
+  font-stretch: normal;
+  color: #BABABA;
+  margin-bottom: 20px; }
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 1.563em;
+  font-style: normal;
+  font-stretch: normal; }
+
+/*links*/
 a {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  color: #fff; }
+  color: #fff;
+  outline: none; }
   a:hover {
     text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    color: #fff; }
+
+/* paragraph */
+p {
+  font-family: "Circe";
+  font-weight: 300;
+  font-size: 1em;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4C4C4C;
+  margin-bottom: 23px;
+  line-height: 1.45; }
 
 .button {
   cursor: pointer;
@@ -41,6 +76,9 @@ a {
   .button:hover {
     background: #20DF71;
     color: #fff; }
+
+.small_button {
+  font-size: 1.250em; }
 
 /* MENU */
 .menu {
@@ -90,7 +128,7 @@ a {
 }*/
 /* Icon 3 */
 #nav-icon span:nth-child(1) {
-  top: 0px; }
+  top: 0; }
 
 #nav-icon span:nth-child(2),
 #nav-icon span:nth-child(3) {
@@ -104,7 +142,7 @@ a {
 
 #nav-icon.open span:nth-child(1) {
   top: 12px;
-  width: 0%;
+  width: 0;
   left: 50%; }
 
 #nav-icon.open span:nth-child(2) {
@@ -121,7 +159,7 @@ a {
 
 #nav-icon.open span:nth-child(4) {
   top: 12px;
-  width: 0%;
+  width: 0;
   left: 50%;
   z-index: 3333; }
 
@@ -133,17 +171,17 @@ a {
   bottom: 0;
   width: 50%;
   height: 100vh;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 15.3%;
   z-index: 2222;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   background: #16a754;
-   }
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 15.3%;
+  display: none; }
 
 .opened {
   right: 0; }
@@ -167,7 +205,7 @@ a {
     font-style: normal;
     font-stretch: normal; }
     .menu_list li a {
-      border-bottom: 2px solid transparent; }
+      border-bottom: 3px solid transparent; }
       .menu_list li a:hover {
         color: #fff;
         border-bottom: 3px solid #fff; }
@@ -211,7 +249,7 @@ header {
 .arrow_down {
   position: absolute;
   bottom: 0;
-  right: 58px;
+  right: 55px;
   background: rgba(255, 255, 255, 0.2);
   width: 56px;
   text-align: center;
@@ -236,3 +274,116 @@ header {
       background: rgba(60, 60, 60, 0.2); }
     .arrow_down a:hover img {
       top: 20px; }
+
+/* parusan container */
+.parusan_cont {
+  padding-top: 95px;
+  padding-bottom: 175px;
+  padding-/*left:30px;*/ }
+
+.white_box {
+  background: #fff;
+  z-index: 400;
+  margin-left: 21px;
+  padding-left: 42px;
+  padding-top: 42px;
+  padding-right: 40px;
+  padding-bottom: 20px; }
+
+.left_box {
+  margin-left: 0;
+  padding-left: 28px;
+  margin-right: 15px;
+  padding-bottom: 10px; }
+  .left_box .price_box {
+    margin-left: 41px; }
+  .left_box .gray_line {
+    right: -44px; }
+
+.green_text {
+  color: #16a754;
+  font-weight: 800;
+  letter-spacing: 1.5px; }
+
+.line {
+  width: 48px;
+  height: 2px; }
+
+.green_line {
+  width: 2px;
+  height: 48px;
+  background: #13b156; }
+
+.gray_line {
+  background: #CBCBCB;
+  position: relative;
+  top: -25px; }
+
+.arrow_down_small {
+  position: absolute;
+  right: -18px;
+  bottom: -101px; }
+  .arrow_down_small p {
+    color: #16a754;
+    font-weight: 700;
+    margin-bottom: 6px; }
+
+.shampoo_box {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px; }
+
+.order_row {
+  padding-top: 41px; }
+
+.price_box {
+  margin-bottom: 0;
+  margin-top: 7px;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 1.563em;
+  font-style: normal;
+  font-stretch: normal; }
+
+.separator_big {
+  height: 200px;
+  background: transparent; }
+
+.separator_small {
+  height: 60px;
+  background: transparent; }
+
+/* ACTION */
+.action_cont {
+  background: #13b156;
+  padding-top: 46px;
+  padding-bottom: 88px; }
+  .action_cont h2 {
+    color: #fff; }
+
+.action_row {
+  padding-left: 128px;
+  padding-right: 30px; }
+
+.action_box {
+  padding-top: 15px;
+  padding-right: 50px; }
+  .action_box p {
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 1.125em;
+    font-style: normal;
+    font-stretch: normal;
+    color: #fff; }
+
+.abox1 img {
+  margin-top: 30px;
+  margin-bottom: 55px; }
+
+.abox2 img {
+  margin-top: 0px;
+  margin-bottom: 42px; }
+
+.abox3 img {
+  margin-top: 10px;
+  margin-bottom: 45px; }

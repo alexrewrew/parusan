@@ -7,9 +7,9 @@ $c-gray: #CDCDCD; //hard gray
 $d-gray: #BABABA; //hard middle gray
 $font: 'Circe'; //main font
 $white: #fff;
-$a-green:#13b156;
-$b-green:#16a754;
-$c-green:#20DF71;
+$a-green: #13b156;
+$b-green: #16a754;
+$c-green: #20DF71;
 
 /* MIXINS */
 @mixin transition { //transition property
@@ -37,31 +37,63 @@ body {
   color: $text;
 }
 
+/* headers */
+h2 {
+  @include regular-text(700, 2.250em);
+  color: $d-gray;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  @include regular-text(700, 1.563em);
+}
+
+/*links*/
 a {
   @include transition;
   color: $white;
+  outline: none;
   &:hover {
     text-decoration: none;
   }
+  &:focus {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+/* paragraph */
+p {
+  @include regular-text(300, 1em);
+  color: $text;
+  margin-bottom: 23px;
+  line-height: 1.45;
 }
 
 .button {
   cursor: pointer;
   @include transition;
   @include regular-text(700, 1.625em);
-  background:$a-green;
+  background: $a-green;
   display: inline-block;
   text-align: center;
   min-width: 292px;
   margin-bottom: 15px;
   padding: {
-    top:10px;
-    bottom:13px;
-  };
+    top: 10px;
+    bottom: 13px;
+  }
+;
   &:hover {
     background: $c-green;
     color: $white;
   }
+}
+
+.small_button {
+  font-size: 1.250em;
 }
 
 /* MENU */
@@ -105,6 +137,7 @@ a {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
+
 #nav-icon.nav-down span {
   background: $head-text;
 }
@@ -116,7 +149,7 @@ a {
 /* Icon 3 */
 
 #nav-icon span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 #nav-icon span:nth-child(2),
@@ -134,7 +167,7 @@ a {
 
 #nav-icon.open span:nth-child(1) {
   top: 12px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -154,7 +187,7 @@ a {
 
 #nav-icon.open span:nth-child(4) {
   top: 12px;
-  width: 0%;
+  width: 0;
   left: 50%;
   z-index: 3333;
 }
@@ -162,62 +195,67 @@ a {
 /* COLLAPSED MENU */
 .main_menu {
   position: fixed;
-  right:-1000px;
-  top:0;
-  bottom:0;
+  right: -1000px;
+  top: 0;
+  bottom: 0;
   width: 50%;
   height: 100vh;
   z-index: 2222;
   @include transition;
   background: $b-green;
   padding: {
-    top:0;
-    bottom:0;
-    right:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     left: 15.3%;
-  };
+  }
+  display: none;
 }
 
 .opened {
-  right:0;
+  right: 0;
 }
 
 .menu_list {
   margin: {
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 58px;
-  };
+  }
+;
   padding: 0;
-  list-style:none;
+  list-style: none;
   li {
     padding: 0;
     margin: {
-      top:0;
-      left:0;
-      right:0;
-      bottom:6px;
-    };
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+    }
+  ;
     @include regular-text(700, 1.500em);
     a {
-      border-bottom: 2px solid transparent;
+      border-bottom: 3px solid transparent;
       &:hover {
-        color:$white;
+        color: $white;
         border-bottom: 3px solid $white;
       }
     }
   }
 }
+
 .menu_social {
   padding: 0;
   margin: 0;
-  list-style:none;
+  list-style: none;
   li {
     padding: 0;
     margin: {
-      right:33px;
-    };
+      right: 33px;
+    }
+  ;
     display: inline-block;
     a {
       font-size: 2.25em;
@@ -235,9 +273,10 @@ header {
   background-size: cover;
   position: relative;
   padding: {
-    top:50px;
+    top: 50px;
     bottom: 106px;
-  };
+  }
+;
 }
 
 .lead_text {
@@ -247,16 +286,17 @@ header {
   color: $white;
   border-right: 2px solid $white;
   margin: {
-    right:36px;
-    top:121px;
-    bottom:73px;
-    left:0;
-  };
+    right: 36px;
+    top: 121px;
+    bottom: 73px;
+    left: 0;
+  }
 }
+
 .arrow_down {
   position: absolute;
-  bottom:0;
-  right: 58px;
+  bottom: 0;
+  right: 55px;
   background: rgba(255, 255, 255, 0.2);
   width: 56px;
   text-align: center;
@@ -264,22 +304,174 @@ header {
   a {
     display: inline-block;
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: {
-      top:50px;
-      bottom:45px;
-    };
+      top: 50px;
+      bottom: 45px;
+    }
+  ;
     img {
       @include transition;
       position: relative;
-      top:0;
+      top: 0;
     }
     &:hover {
       background: rgba(60, 60, 60, 0.2);
     }
     &:hover img {
-      top:20px;
+      top: 20px;
     }
+  }
+}
+
+/* parusan container */
+.parusan_cont {
+  padding: {
+    top: 95px;
+    bottom: 175px;
+    /*left:30px;*/
+  }
+}
+
+.white_box {
+  background: $white;
+  z-index: 400;
+  margin: {
+    left: 21px;
+
+  }
+  padding: {
+    left: 42px;
+    top: 42px;
+    right: 40px;
+    bottom: 20px;
+  }
+;
+}
+
+.left_box {
+  margin-left: 0;
+  padding-left: 28px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  .price_box {
+    margin-left: 41px;
+  }
+  .gray_line {
+    right: -44px;
+  }
+}
+
+.green_text {
+  color: $b-green;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.line {
+  width: 48px;
+  height: 2px;
+}
+
+.green_line {
+  width: 2px;
+  height: 48px;
+  background: $a-green;
+}
+
+.gray_line {
+  background: $b-gray;
+  position: relative;
+  top: -25px;
+}
+
+.arrow_down_small {
+  position: absolute;
+  right: -18px;
+  bottom: -101px;
+  p {
+    color: $b-green;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+}
+
+.shampoo_box {
+  padding: {
+    bottom: 10px;
+    top: 20px;
+    right: 5px;
+  }
+}
+
+.order_row {
+  padding-top: 41px;
+}
+
+.price_box {
+  margin-bottom: 0;
+  margin-top: 7px;
+  @include regular-text(700, 1.563em);
+}
+
+.separator_big {
+  height: 200px;
+  background: transparent;
+}
+
+.separator_small {
+  height: 60px;
+  background: transparent;
+}
+
+/* ACTION */
+.action_cont {
+  background: $a-green;
+  padding: {
+    top: 46px;
+    bottom:88px;
+  }
+  h2 {
+    color: $white;
+  }
+}
+
+.action_row {
+  padding: {
+    left:128px;
+    right:30px;
+  }
+}
+
+.action_box {
+  padding-top: 15px;
+  padding-right: 50px;
+  p {
+    @include regular-text(700, 1.125em);
+    color: $white;
+  }
+}
+
+.abox1 img {
+  margin: {
+    top: 30px;
+    bottom: 55px;
   }
 
 }
+
+.abox2 img {
+  margin: {
+    top: 0px;
+    bottom: 42px;
+  }
+}
+
+.abox3 img {
+  margin: {
+    top: 10px;
+    bottom: 45px;
+  }
+}
+
+
