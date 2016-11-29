@@ -81,6 +81,7 @@ p {
   min-width: 292px;
   margin-bottom: 15px;
   border: none;
+  outline: none;
   padding-top: 10px;
   padding-bottom: 13px; }
   .button:hover {
@@ -92,7 +93,6 @@ p {
 
 /*froms */
 input {
-  -webkit-appearance: none;
   outline: none;
   width: 100%;
   background: transparent;
@@ -111,9 +111,13 @@ input {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  -webkit-box-shadow: inset 0 1px 4px 0 #13b156, inset 0 0 0 50px #13b156, 0 1px rgba(255, 255, 255, 0.06);
+  -webkit-appearance: none; }
   input:focus {
-    background: #fff; }
+    background: #fff;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow: inset 0 1px 4px 0 #fff, inset 0 0 0 50px #fff, 0 1px rgba(255, 255, 255, 0.06); }
 
 ::-webkit-input-placeholder {
   color: #fff; }
@@ -175,10 +179,18 @@ select {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .minus1 span, .minus2 span {
     position: relative;
-    top: -7px; }
+    top: -7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .minus1:hover, .minus2:hover {
     background: #20DF71; }
 
@@ -194,10 +206,18 @@ select {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .plus1 span, .plus2 span {
     position: relative;
-    top: -6px; }
+    top: -6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .plus1:hover, .plus2:hover {
     background: #20DF71; }
 
@@ -227,7 +247,8 @@ select {
 
 .count, .count_price {
   /*float: right;*/
-  width: 6%;
+  width: 20%;
+  text-align: right;
   margin-left: 65px;
   margin-bottom: 10px; }
 
@@ -245,6 +266,12 @@ select {
 
 hr {
   margin-bottom: 29px; }
+
+.errorForm {
+  border: 2px solid red; }
+
+.errorFormNum {
+  color: red !important; }
 
 /*.number {
     position: relative;
@@ -482,8 +509,7 @@ header {
 /* parusan container */
 .parusan_cont {
   padding-top: 95px;
-  padding-bottom: 175px;
-  padding-/*left:30px;*/ }
+  padding-bottom: 175px; }
 
 .white_box {
   background: #fff;

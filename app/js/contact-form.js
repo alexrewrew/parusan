@@ -1,65 +1,87 @@
 $(document).ready(function () {
     $("#contact-form").submit(function (e) {
-        $('#error_form').css('display','none');
-        $('#success_form').css('display','none');
+
         $(".errorForm").removeClass("errorForm");
+        $(".errorFormNum").removeClass("errorFormNum");
+
         var send = true;
+
         if ($("#name").val() == "") {
             send = false;
             $("#name").addClass("errorForm");
-            $('#error_form').fadeIn('fast');
-            //
-            console.log('Error Name');
-            //
         }
-        if ($("#phone").val() == "") {
+        if ($("#sername").val() == "") {
             send = false;
-            $("#phone").addClass("errorForm");
-            $('#error_form').fadeIn('fast');
-            //
-            console.log('Error Phone');
-            //
+            $("#sername").addClass("errorForm");
         }
-        /*if ($("#surname").val() == "") {
+        if ($("#tel").val() == "") {
             send = false;
-            $("#surname").addClass("errorForm");
-            $('#error_form').fadeIn('fast');
-            //
-            console.log('Error Surname');
-            //
-        }*/
+            $("#tel").addClass("errorForm");
+        }
+        if ($("#email").val() == "") {
+            send = false;
+            $("#email").addClass("errorForm");
+        }
+
+        if ($("#dost").val() == null) {
+            send = false;
+            $("#dost").addClass("errorForm");
+        }
+
+        if ($("#adress").val() == "") {
+            if ($("#dost").val() != "Самовивіз") {
+                send = false;
+                $("#adress").addClass("errorForm");
+            }
+        }
+
+        if ($("#count").val() == "0") {
+            send = false;
+            $("#count").addClass("errorFormNum");
+            $("#count_price").addClass("errorFormNum");
+            $(".plus1").addClass("errorFormNum");
+            $(".plus2").addClass("errorFormNum");
+            $(".minus1").addClass("errorFormNum");
+            $(".minus2").addClass("errorFormNum");
+        }
+
 
         if (send) {
             var name = $("#name").val();
-            var sername = $("#surname").val();
-            var phone = $("#phone").val();
-            var kol = $("#pm").val();
+            var sername = $("#sername").val();
+            var tel = $("#tel").val();
+            var email = $("#email").val();
+            var kol1 = $("#pm1").val();
+            var kol2 = $("#pm2").val();
+            var kol = $("#count").val();
+            var price = $("#count_price").val();
+            var dost = $("#dost").val();
+            var adress = $("#adress").val();
 
             $.ajax({
                 method: "POST",
-                url: "send.php",
-                data: {name: name, sername: sername, phone: phone, kol: kol},
+                url: "php/send.php",
+                data: {
+                    name: name,
+                    sername: sername,
+                    email: email,
+                    tel: tel,
+                    kol: kol,
+                    price: price,
+                    dost: dost,
+                    adress: adress,
+                    kol1: kol1,
+                    kol2: kol2
+                },
                 success: function (data) {
                     if (data == "") {
-                        $('#client_name').text(name);
-                        $('#error_form').fadeOut('slow');
-                        $('#success_form').fadeIn('slow');
                         $('#contact-form').trigger("reset");
-                        //
-                        /*ga('send', 'event', 'zakaz', 'click');
-                        yaCounter40895659.reachGoal('FOOT');
-                        return true;*/
-                        //
+                        $("#okform").html("Замовлено")
                     }
                 }
             });
 
         }
-        //
-        else {
-            console.log('Error Send');
-        }
-        //
         e.preventDefault();
     });
 
@@ -67,11 +89,82 @@ $(document).ready(function () {
         $(this).removeClass("errorForm");
     });
 
+    $("#sername").change(function () {
+        $(this).removeClass("errorForm");
+    });
+
     $("#email").change(function () {
         $(this).removeClass("errorForm");
     });
 
-    $("#message").change(function () {
+    $("#tel").change(function () {
         $(this).removeClass("errorForm");
+    });
+
+    $("#dost").change(function () {
+        $(this).removeClass("errorForm");
+        if ($(this).val() == "Самовивіз") {
+            $("#adress").removeClass("errorForm");
+        }
+    });
+
+    $("#adress").change(function () {
+        $(this).removeClass("errorForm");
+    });
+
+    $(".plus1").click(function () {
+        var c = parseInt($("#count").val());
+        c++;
+        $("#count").val(c);
+        var p = parseInt($("#count_price").val());
+        p += 350;
+        $("#count_price").val(p);
+        k = parseInt($("#pm1").val());
+        k++;
+        $("#pm1").val(k);
+        $(".errorFormNum").removeClass("errorFormNum");
+    });
+
+    $(".plus2").click(function () {
+        var c = parseInt($("#count").val());
+        c++;
+        $("#count").val(c);
+        var p = parseInt($("#count_price").val());
+        p += 700;
+        $("#count_price").val(p);
+        k = parseInt($("#pm2").val());
+        k++;
+        $("#pm2").val(k);
+        $(".errorFormNum").removeClass("errorFormNum");
+    });
+
+    $(".minus1").click(function () {
+        var c = parseInt($("#count").val());
+        if (c != 0) {
+            c--;
+            $("#count").val(c);
+            var p = parseInt($("#count_price").val());
+            p -= 350;
+            $("#count_price").val(p);
+            k = parseInt($("#pm1").val());
+            k--;
+            $("#pm1").val(k);
+            $(".errorFormNum").removeClass("errorFormNum");
+        }
+    });
+
+    $(".minus2").click(function () {
+        var c = parseInt($("#count").val());
+        if (c != 0) {
+            c--;
+            $("#count").val(c);
+            var p = parseInt($("#count_price").val());
+            p -= 700;
+            $("#count_price").val(p);
+            k = parseInt($("#pm2").val());
+            k--;
+            $("#pm2").val(k);
+            $(".errorFormNum").removeClass("errorFormNum");
+        }
     });
 });

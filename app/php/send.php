@@ -22,30 +22,41 @@ function send_mime_mail($name_from, $email_from, $name_to, $email_to, $data_char
 if(!empty($_POST)){
 	$arUsers = array(
 		array(
-			"NAME"=>"BOOSTER",
-			"EMAIL"=>"delivery@farmastor.com"
+			"NAME"=>"PARUSAN",
+			"EMAIL"=>"alexrewrew@live.com"
 		),
         array(
-			"NAME"=>"BOOSTER",
-			"EMAIL"=>"sale@eyelashbooster.com.ua"
+			"NAME"=>"PARUSAN",
+			"EMAIL"=>"alexrew2012@gmail.com"
 		),
         array(
-			"NAME"=>"BOOSTER",
-			"EMAIL"=>"pharmatheissbooster@gmail.com"
+			"NAME"=>"PARUSAN",
+			"EMAIL"=>"alex@volta.one"
 		),
 	);
 
     $message = '';
     $message .= "<b>Ім'я:</b><br/>".$_POST['name']."<br/><br/>";
     $message .= "<b>Прізвище:</b><br/>".$_POST['sername']."<br/><br/>";
-    $message .= '<b>Телефон:</b><br/>'.$_POST['phone'].'<br/><br/>';
-    $message .= '<b>Кількість:</b><br/>'.$_POST['kol'].'<br/><br/>';
-    $message .= '<b>Сыворотка Eyelash Booster для роста и укрепления ресниц 2,7 мл Айлеш Бустер</b><br/><br/>';
+    $message .= '<b>Телефон:</b><br/>'.$_POST['tel'].'<br/><br/>';
+    $message .= '<b>Email:</b><br/>'.$_POST['email'].'<br/><br/>';
+    $message .= '<b>Тоник</b><br/><br/>';
     $message .= '<b>Код:</b> 242678<br/><br/>';
-    $message .= '<b>Ціна:</b> 709 грн<br/><br/>';
+    $message .= '<b>Ціна:</b> 350 грн<br/><br/>';
+	$message .= '<b>Кількість:</b><br/>'.$_POST['kol1'].'<br/><br/>';
+	$message .= '<b>Шампунь</b><br/><br/>';
+	$message .= '<b>Код:</b> 242678<br/><br/>';
+	$message .= '<b>Ціна:</b> 700 грн<br/><br/>';
+	$message .= '<b>Кількість:</b><br/>'.$_POST['kol2'].'<br/><br/>';
+	$message .= '<b>Загальна кількість:</b><br/>'.$_POST['kol'].'<br/><br/>';
+	$message .= '<b>Загальна сумма:</b><br/>'.$_POST['price'].'<br/><br/>';
+	$message .= '<b>Спосіб доставки:</b><br/>'.$_POST['dost'].'<br/><br/>';
+	if (!empty($_POST['adress'])) {
+		$message .= '<b>Адреса:</b><br/>'.$_POST['adress'].'<br/><br/>';
+	}
 
 	foreach ($arUsers as $Item){
-		$r = send_mime_mail("EYELASHBOOSTER", "delivery@farmastor.com", $Item['NAME'], $Item['EMAIL'], 'utf-8', 'utf-8', "Замовлення на сайті EYELASHBOOSTER", $message);
+		$r = send_mime_mail("PARUSAN", "delivery@farmastor.com", $Item['NAME'], $Item['EMAIL'], 'utf-8', 'utf-8', "Замовлення на сайті PARUSAN", $message);
 	}
 }
 ?>

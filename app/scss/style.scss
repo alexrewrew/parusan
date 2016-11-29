@@ -88,6 +88,7 @@ p {
   min-width: 292px;
   margin-bottom: 15px;
   border:none;
+  outline: none;
   padding: {
     top: 10px;
     bottom: 13px;
@@ -105,7 +106,6 @@ p {
 
 /*froms */
 input {
-  -webkit-appearance: none;
   outline: none;
   width: 100%;
   background: transparent;
@@ -120,8 +120,12 @@ input {
   border-radius: 0;
   @include regular-text(400,1.250em);
   @include transition;
+  -webkit-box-shadow: inset 0 1px 4px 0 $a-green, inset 0 0 0 50px $a-green, 0 1px rgba(255, 255, 255, .06);
+  -webkit-appearance: none;
   &:focus {
     background: $white;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow: inset 0 1px 4px 0 $white, inset 0 0 0 50px $white, 0 1px rgba(255, 255, 255, .06);
   }
 }
 
@@ -178,9 +182,17 @@ select {
   text-align: center;
   @include transition;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   span {
     position: relative;
     top: -7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   &:hover {
     background: $c-green;
@@ -196,9 +208,17 @@ select {
   text-align: center;
   @include transition;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   span {
     position: relative;
     top: -6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   &:hover {
     background: $c-green;
@@ -224,7 +244,8 @@ select {
 }
 .count, .count_price {
   /*float: right;*/
-  width: 6%;
+  width: 20%;
+  text-align: right;
   margin-left: 65px;
   margin-bottom: 10px;
 
@@ -240,6 +261,13 @@ select {
 }
 hr {
   margin-bottom: 29px;
+}
+.errorForm {
+  border: 2px solid red;
+}
+
+.errorFormNum {
+  color: red!important;
 }
   /*.number {
     position: relative;
@@ -513,7 +541,6 @@ header {
   padding: {
     top: 95px;
     bottom: 175px;
-    /*left:30px;*/
   }
 }
 
@@ -924,11 +951,11 @@ footer {
 
 .modal-content {
   width: 100%;
-  margin:0;
+  margin: 0;
   min-height: 100vh;
-  box-shadow:none;
+  box-shadow: none;
   border-radius: 0;
-  border:0;
+  border: 0;
   background: $a-green;
   padding-top: 46px;
   padding-bottom: 79px;
@@ -937,6 +964,8 @@ footer {
     font-size: 2.125em;
   }
 }
+
+
 
 /* close modal */
 .mod {
