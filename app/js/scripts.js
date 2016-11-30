@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+    /*$(window).on('load resize', function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $("#nav-icon").addClass('nav-down');
+                $(".arrow_up").fadeIn('slow');
+            } else {
+                $("#nav-icon").removeClass('nav-down');
+                $(".arrow_up").fadeOut('fast');
+            }
+        });
+    });*/
     //menu
     $('.menu').click(function () {
         $('#nav-icon').toggleClass('open');
@@ -12,17 +24,7 @@ $(document).ready(function () {
 
     });
 
-    $(window).on('load resize', function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 500) {
-                $("#nav-icon").addClass('nav-down');
-                $(".arrow_up").fadeIn('slow');
-            } else {
-                $("#nav-icon").removeClass('nav-down');
-                $(".arrow_up").fadeOut('fast');
-            }
-        });
-    });
+
 
     $(document).mouseup(function (e) {
         var div = $(".opened");
@@ -77,4 +79,10 @@ $(document).ready(function () {
         $(this).addClass('active_pan');
         /*$('.accordion_angle').attr('src', '../img/icons/angle-down3.svg');*/
     });
+
+    //overflow
+    /*$('.button').click(function() {
+       $('body').css('overflow', 'hidden');
+    });*/
+
 });

@@ -2,7 +2,7 @@
 /* MIXINS */
 /* main styles */
 body {
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
   background: #fff;
   font-family: "Circe";
   font-weight: 400;
@@ -155,7 +155,7 @@ select {
 .order_from {
   padding-left: 113px;
   padding-right: 113px;
-  padding-top: 50px; }
+  padding-top: 30px; }
 
 /* PLUS MINUS */
 .number {
@@ -233,7 +233,8 @@ select {
   text-align: center;
   margin-bottom: 3px; }
   #pm1:focus, #pm2:focus {
-    background: transparent; }
+    background: #13b156;
+    -webkit-box-shadow: none; }
 
 .count, .count_price, .count_text, .count_price_text {
   font-family: "Circe";
@@ -251,6 +252,9 @@ select {
   text-align: right;
   margin-left: 65px;
   margin-bottom: 10px; }
+  .count:focus, .count_price:focus {
+    background: #13b156;
+    -webkit-box-shadow: none; }
 
 .count_text, .count_price_text {
   margin-left: 30px; }
@@ -790,7 +794,9 @@ footer {
 
 .copy_row {
   background: #fff;
-  margin-top: 49px; }
+  margin-top: 49px;
+  margin-left: 0;
+  margin-right: 0; }
 
 .arrow_up {
   display: none;
@@ -825,8 +831,16 @@ footer {
       top: -20px; }
 
 /* modal */
+.modal-open .modal {
+  overflow-y: scroll; }
+
+.modal-open {
+  position: fixed;
+  width: 100%; }
+
 .modal {
-  z-index: 5555; }
+  z-index: 5555;
+  overflow-y: scroll; }
   .modal .button {
     background: #fff;
     width: 370px; }
@@ -853,18 +867,24 @@ footer {
   padding-bottom: 79px; }
   .modal-content h2 {
     color: #fff;
+    margin-bottom: 25px;
     font-size: 2.125em; }
 
 /* close modal */
-.mod {
+/*.mod {
+  position: fixed;
+  top: 49px;
+  right: 63px;
+  width: 40px;
+  height: 24px;
+}*/
+.close {
+  opacity: 1;
   position: fixed;
   top: 49px;
   right: 63px;
   width: 40px;
   height: 24px; }
-
-.close {
-  opacity: 1; }
   .close:hover {
     opacity: .5;
     -webkit-transition: all 0.4s ease;
@@ -873,6 +893,34 @@ footer {
     transition: all 0.4s ease; }
   .close:focus {
     opacity: .5; }
+
+.back_close {
+  position: static;
+  width: auto;
+  height: auto;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal;
+  font-stretch: normal;
+  text-shadow: none;
+  color: #4C4C4C;
+  cursor: pointer;
+  text-decoration: underline;
+  float: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+#send_success {
+  display: none;
+  margin-bottom: 0; }
+
+#send_error {
+  display: none;
+  margin-bottom: 0;
+  color: red; }
 
 .product_img {
   margin-bottom: 25px; }

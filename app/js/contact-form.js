@@ -3,35 +3,61 @@ $(document).ready(function () {
 
         $(".errorForm").removeClass("errorForm");
         $(".errorFormNum").removeClass("errorFormNum");
+        $('.send_success').fadeOut();
+        $('.send_error').fadeOut();
 
         var send = true;
 
         if ($("#name").val() == "") {
             send = false;
             $("#name").addClass("errorForm");
+            $('#myModal').animate({
+                scrollTop: $('#modal_top').offset().top
+            }, 1500);
+            $('#send_error').fadeIn('fast');
         }
         if ($("#sername").val() == "") {
             send = false;
             $("#sername").addClass("errorForm");
+            $('#myModal').animate({
+                scrollTop: $('#modal_top').offset().top
+            }, 1500);
+            $('#send_error').fadeIn('fast');
         }
         if ($("#tel").val() == "") {
             send = false;
             $("#tel").addClass("errorForm");
+            $('#myModal').animate({
+                scrollTop: $('#modal_top').offset().top
+            }, 1500);
+            $('#send_error').fadeIn('fast');
         }
         if ($("#email").val() == "") {
             send = false;
             $("#email").addClass("errorForm");
+            $('#myModal').animate({
+                scrollTop: $('#modal_top').offset().top
+            }, 1500);
+            $('#send_error').fadeIn('fast');
         }
 
         if ($("#dost").val() == null) {
             send = false;
             $("#dost").addClass("errorForm");
+            $('#myModal').animate({
+                scrollTop: $('#modal_top').offset().top
+            }, 1500);
+            $('#send_error').fadeIn('fast');
         }
 
         if ($("#adress").val() == "") {
             if ($("#dost").val() != "Самовивіз") {
                 send = false;
                 $("#adress").addClass("errorForm");
+                $('#myModal').animate({
+                    scrollTop: $('#modal_top').offset().top
+                }, 1500);
+                $('#send_error').fadeIn('fast');
             }
         }
 
@@ -43,6 +69,7 @@ $(document).ready(function () {
             $(".plus2").addClass("errorFormNum");
             $(".minus1").addClass("errorFormNum");
             $(".minus2").addClass("errorFormNum");
+            $('#send_error').fadeIn('fast');
         }
 
 
@@ -76,7 +103,12 @@ $(document).ready(function () {
                 success: function (data) {
                     if (data == "") {
                         $('#contact-form').trigger("reset");
-                        $("#okform").html("Замовлено")
+                        $("#okform").html("Замовлено");
+                        $('#myModal').animate({
+                            scrollTop: $('#modal_top').offset().top
+                        }, 1500);
+                        $('#send_error').fadeOut('fast');
+                        $('#send_success').fadeIn('fast');
                     }
                 }
             });

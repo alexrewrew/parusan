@@ -126,6 +126,9 @@
   .modal .button {
     width: 100%;
   }
+  .close {
+    position: static;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -201,6 +204,7 @@
   .footer_social {
     padding-left: 34px;
   }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
