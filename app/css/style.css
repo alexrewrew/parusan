@@ -642,21 +642,21 @@ header {
 
 .abox1 {
   padding-left: 30px;
-  padding-right: 65px; }
+  padding-right: 20px; }
   .abox1 img {
     margin-top: 29px;
     margin-bottom: 56px; }
 
 .abox2 {
-  padding-left: 79px;
-  padding-right: 37px; }
+  padding-left: 70px;
+  padding-right: 0; }
   .abox2 img {
     margin-top: 1px;
     margin-bottom: 41px;
     margin-left: 1px; }
 
 .abox3 {
-  padding-left: 131px; }
+  padding-left: 70px; }
   .abox3 img {
     margin-top: 11px;
     margin-bottom: 44px;
