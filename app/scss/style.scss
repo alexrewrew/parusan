@@ -53,7 +53,7 @@ h3 {
 h4 {
   @include regular-text(700, 1.500em);
   color: $a-green;
-  margin-bottom: 67px;
+  margin-bottom: 62px;
 }
 
 /*links*/
@@ -87,7 +87,7 @@ p {
   text-align: center;
   min-width: 292px;
   margin-bottom: 15px;
-  border:none;
+  border: none;
   outline: none;
   padding: {
     top: 10px;
@@ -111,14 +111,14 @@ input {
   background: transparent;
   border: solid 2px $white;
   padding: {
-    top:11px;
-    bottom:12px;
-    left:34px;
-    right:34px;
+    top: 11px;
+    bottom: 12px;
+    left: 34px;
+    right: 34px;
   }
   margin-bottom: 35px;
   border-radius: 0;
-  @include regular-text(400,1.250em);
+  @include regular-text(400, 1.250em);
   @include transition;
   -webkit-box-shadow: inset 0 1px 4px 0 $a-green, inset 0 0 0 50px $a-green, 0 1px rgba(255, 255, 255, .06);
   -webkit-appearance: none;
@@ -129,10 +129,23 @@ input {
   }
 }
 
-::-webkit-input-placeholder {color:$white;}
-::-moz-placeholder          {color:$white;}/* Firefox 19+ */
-:-moz-placeholder           {color:$white;}/* Firefox 18- */
-:-ms-input-placeholder      {color:$white;}
+::-webkit-input-placeholder {
+  color: $white;
+}
+
+::-moz-placeholder {
+  color: $white;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: $white;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $white;
+}
 
 select {
   -webkit-appearance: none;
@@ -141,22 +154,22 @@ select {
   background: transparent;
   border: solid 2px $white;
   padding: {
-    top:11px;
-    bottom:12px;
-    left:34px;
-    right:34px;
+    top: 11px;
+    bottom: 12px;
+    left: 34px;
+    right: 34px;
   }
   color: $white;
   margin-bottom: 35px;
   border-radius: 0;
-  @include regular-text(400,1.250em);
+  @include regular-text(400, 1.250em);
 }
 
 .order_from {
   padding: {
-    left:113px;
-    right:113px;
-    top:30px;
+    left: 113px;
+    right: 113px;
+    top: 30px;
   }
 }
 
@@ -172,9 +185,10 @@ select {
   right: 0;
   top: 20px;
 }
+
 .minus1, .minus2 {
   position: absolute;
-  left:5px;
+  left: 5px;
   font-size: 2em;
   width: 31px;
   height: 31px;
@@ -198,9 +212,10 @@ select {
     background: $c-green;
   }
 }
+
 .plus1, .plus2 {
   position: absolute;
-  right:33px;
+  right: 33px;
   font-size: 2.150em;
   width: 31px;
   height: 31px;
@@ -226,7 +241,7 @@ select {
 }
 
 #pm1, #pm2 {
-  @include regular-text(700,2.250em);
+  @include regular-text(700, 2.250em);
   width: 82%;
   border: none;
   background: transparent;
@@ -237,12 +252,14 @@ select {
     -webkit-box-shadow: none;
   }
 }
+
 .count, .count_price, .count_text, .count_price_text {
-  @include regular-text(700,1.750em);
+  @include regular-text(700, 1.750em);
   padding: 0;
-  border:none;
-  color:$white;
+  border: none;
+  color: $white;
 }
+
 .count, .count_price {
   /*float: right;*/
   width: 20%;
@@ -255,63 +272,67 @@ select {
   }
 
 }
+
 .count_text, .count_price_text {
   margin-left: 30px;
 }
 
 .uah {
   /*float: right;*/
-  @include regular-text(700,1.750em);
+  @include regular-text(700, 1.750em);
   color: $white;
 }
+
 hr {
   margin-bottom: 29px;
 }
+
 .errorForm {
   border: 2px solid red;
 }
 
 .errorFormNum {
-  color: red!important;
+  color: red !important;
 }
-  /*.number {
-    position: relative;
-    display: inline;
-    color: #000;
-  }
 
-  .action {
-    position: absolute;
-    top: -3px;
-    right: 17px;
-  }
+/*.number {
+  position: relative;
+  display: inline;
+  color: #000;
+}
 
-  .plus,
-  .minus {
-    cursor: pointer;
-    color: #fff;
-    background: #c9d1d2;
-  }
+.action {
+  position: absolute;
+  top: -3px;
+  right: 17px;
+}
 
-  .plus:hover,
-  .minus:hover {
-    background: #81cec5;
-  }
+.plus,
+.minus {
+  cursor: pointer;
+  color: #fff;
+  background: #c9d1d2;
+}
 
-  .plus {
-    right: 50px;
-    padding: 1px 8px;
-  }
+.plus:hover,
+.minus:hover {
+  background: #81cec5;
+}
 
-  .minus {
-    right: 17px;
-    padding: 1px 9px;
-  }
+.plus {
+  right: 50px;
+  padding: 1px 8px;
+}
 
-  #pm {
-    width: 20%;
-    min-width: 0;
-  }*/
+.minus {
+  right: 17px;
+  padding: 1px 9px;
+}
+
+#pm {
+  width: 20%;
+  min-width: 0;
+}*/
 
 /* MENU */
 .menu {
@@ -503,7 +524,7 @@ header {
   color: $white;
   border-right: 2px solid $white;
   margin: {
-    right: 36px;
+    right: 26px;
     top: 121px;
     bottom: 73px;
     left: 0;
@@ -544,36 +565,46 @@ header {
 /* parusan container */
 .parusan_cont {
   padding: {
-    top: 95px;
+    top: 96px;
     bottom: 175px;
   }
 }
 
 .white_box {
   background: $white;
+  /*background: transparent;*/
   z-index: 400;
   margin: {
-    left: 21px;
+    left: 25px;
 
   }
   padding: {
     left: 42px;
-    top: 42px;
-    right: 40px;
+    top: 40px;
+    right: 25px;
     bottom: 20px;
   }
 }
 
 .left_box {
+  background: transparent;
   margin-left: 0;
   padding-left: 28px;
   margin-right: 15px;
   padding-bottom: 10px;
+  padding-right: 55px;
+  .components {
+    text-align: right;
+  }
   .price_box {
     margin-left: 41px;
   }
   .gray_line {
-    right: -44px;
+    left: 0;
+    float: left;
+  }
+  .order_row .button {
+    left: 0;
   }
 }
 
@@ -597,13 +628,15 @@ header {
 .gray_line {
   background: $b-gray;
   position: relative;
-  top: -25px;
+  top: 16px;
+  right: 11px;
+  float: right;
 }
 
 .arrow_down_small {
   position: absolute;
-  right: -18px;
-  bottom: -110px;
+  right: -31px;
+  bottom: -112px;
   p {
     color: $b-green;
     font-weight: 700;
@@ -613,26 +646,60 @@ header {
   i {
     font-size: 30px;
     position: relative;
-    top:0;
+    top: 2px;
     @include transition;
   }
   &:hover {
     i {
-      top:10px;
+      top: 12px;
     }
   }
 }
 
 .shampoo_box {
+  background: transparent;
   padding: {
     bottom: 10px;
-    top: 20px;
-    right: 5px;
+    top: 18px;
+    right: 15px;
+    left: 40px;
+  }
+}
+
+.components {
+  color: $a-green;
+  @include regular-text(700, 1.125em);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 100%;
+  i {
+    position: relative;
+    left: 24px;
+    font-size: 23px;
+    top: 3px;
+  }
+  &:hover {
+    color: $head-text;
+  }
+  &:focus {
+    color: $a-green;
+  }
+}
+
+.collapsed_components {
+  padding: {
+    top: 0;
+    right: 10px;
   }
 }
 
 .order_row {
-  padding-top: 41px;
+  padding-top: 23px;
+  .button {
+    position: relative;
+    left: 10px;
+  }
 }
 
 .price_box {
@@ -642,7 +709,7 @@ header {
 }
 
 .separator_big {
-  height: 200px;
+  height: 166px;
   background: transparent;
 }
 
@@ -664,40 +731,53 @@ header {
 }
 
 .action_row {
-  padding: {
+  /*padding: {
     left: 128px;
     right: 30px;
-  }
+  }*/
 }
 
 .action_box {
   padding-top: 15px;
-  padding-right: 50px;
+  /*padding-right: 65px;*/
   p {
     @include regular-text(700, 1.125em);
     color: $white;
   }
 }
 
-.abox1 img {
-  margin: {
-    top: 30px;
-    bottom: 55px;
-  }
+.abox1 {
+  padding-left: 30px;
+  padding-right: 65px;
+  img {
+    margin: {
+      top: 29px;
+      bottom: 56px;
+    }
 
-}
-
-.abox2 img {
-  margin: {
-    top: 0px;
-    bottom: 42px;
   }
 }
 
-.abox3 img {
-  margin: {
-    top: 10px;
-    bottom: 45px;
+.abox2 {
+  padding-left: 79px;
+  padding-right: 37px;
+  img {
+    margin: {
+      top: 1px;
+      bottom: 41px;
+      left: 1px;
+    }
+  }
+}
+
+.abox3 {
+  padding-left: 131px;
+  img {
+    margin: {
+      top: 11px;
+      bottom: 44px;
+      left: 1px;
+    }
   }
 }
 
@@ -716,7 +796,7 @@ header {
   background: $a-gray;
   border: none;
   border-radius: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   box-shadow: none;
   &:focus {
     outline: none;
@@ -731,10 +811,10 @@ header {
 }
 
 .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
-  line-height: 1.4;
+  line-height: 1.45;
   border: none;
   display: inline-block;
-  padding: 18px 100px 15px 112px;
+  padding: 17px 100px 19px 111px;
   width: 100%;
   font-weight: 300;
   &:focus {
@@ -752,8 +832,8 @@ header {
   position: relative;
   padding: {
     top: 30px;
-    left: 113px;
-    right: 143px;
+    left: 112px;
+    right: 126px;
     bottom: 23px;
   }
   &:after {
@@ -761,7 +841,7 @@ header {
   }
   p {
     margin-bottom: 0;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
   }
 }
 
@@ -771,22 +851,23 @@ a.active_pan {
 }
 
 .phase1 {
-  margin-bottom: 54px;
-  margin-top: 20px;
+  margin-bottom: 53px;
+  margin-top: 18px;
 }
 
 .phase2 {
-  margin-bottom: 64px;
-  margin-top: 20px;
+  margin-bottom: 62px;
+  margin-top: 19px;
 }
 
 .phase3 {
-  margin-bottom: 54px;
-  margin-top: 20px;
+  margin-bottom: 52px;
+  margin-top: 19px;
 }
 
 .phase4 {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
+  margin-top: -2px;
 }
 
 .gray_plashka {
@@ -806,7 +887,7 @@ a.active_pan {
 .accordion_angle {
   position: absolute;
   top: 24%;
-  right: 109px;
+  right: 94px;
   font-size: 30px;
 }
 
@@ -821,8 +902,8 @@ a.active_pan {
     color: $white;
     line-height: 1.25;
     @include regular-text(400, 1.500em);
-    padding-left: 117px;
-    padding-right: 117px;
+    padding-left: 110px;
+    padding-right: 110px;
     margin-bottom: 33px;
   }
   .button {
@@ -837,9 +918,11 @@ a.active_pan {
 }
 
 /* footer */
-footer {
+footer.container-fluid {
   background: $c-gray;
   padding-top: 46px;
+  padding-left: 0;
+  padding-right: 0;
   h2 {
     color: $text;
   }
@@ -850,7 +933,7 @@ footer {
     left: 30px;
     right: 30px;
     top: 40px;
-    bottom: 40px;
+    bottom: 63px;
   }
   p {
     font-size: 1.150em;
@@ -858,12 +941,12 @@ footer {
 }
 
 .importer {
-  padding-left: 35px;
+  padding-left: 40px;
 }
 
 .footer_social {
   margin-top: 7px;
-  padding-left: 64px;
+  padding-left: 89px;
   list-style: none;
   li {
     margin-bottom: 16px;
@@ -894,13 +977,51 @@ footer {
   margin-bottom: 11px;
 }
 
-.copy_row {
+.copy_cont {
   background: $white;
-
-  margin-top: 49px;
-  margin-left: 0;
-  margin-right: 0;
 }
+
+.copy_row {
+
+
+  /*margin-top: 23px;
+  margin-left: 0;
+  margin-right: 0;*/
+  position: relative;
+}
+
+
+.volta_logo {
+  * {
+    fill:#7521E1;
+  }
+}
+
+.volta_copyright {
+  position: absolute;
+  left:auto;
+  right:0;
+  top:12px;
+  color:#7521E1;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    color: $text;
+    * {
+      fill:$text;
+
+    }
+  }
+  &:focus {
+    color: $text;
+    * {
+      fill:$text;
+
+    }
+  }
+}
+
+
 
 .arrow_up {
   display: none;
@@ -940,10 +1061,77 @@ footer {
 .modal-open .modal {
   overflow-y: scroll;
 }
+
+.modal-open {
+  /*position: fixed;
+  width: 100%;*/
+}
+
+.modal {
+  z-index: 5555;
+  overflow-y: scroll;
+  select {
+    width: 50%;
+  }
+  .button {
+    background: $white;
+    width: 370px;
+    color: $text;
+    &:hover {
+      background: $c-green;
+    }
+  }
+}
+
+.modal-dialog {
+  width: 102%;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+}
+
+.modal-content {
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  background: $a-green;
+  padding: {
+    top:59px;
+    bottom:109px;
+  }
+  h2 {
+    color: $white;
+    margin-bottom: 25px;
+    font-size: 2.125em;
+  }
+}
+
+.close {
+  opacity: 1;
+  position: fixed;
+  top: 49px;
+  right: 63px;
+  width: 40px;
+  height: 24px;
+  &:hover {
+    opacity: .5;
+    @include transition;
+  }
+  &:focus {
+    opacity: .5;
+  }
+}
+
+/*
+.modal-open .modal {
+  overflow-y: scroll;
+}
+
 .modal-open {
   position: fixed;
   width: 100%;
 }
+
 .modal {
   z-index: 5555;
   overflow-y: scroll;
@@ -955,13 +1143,14 @@ footer {
     }
   }
 }
+
 .modal-dialog {
   width: 100%;
-  margin:0;
+  margin: 0;
   min-height: 100vh;
-  box-shadow:none;
+  box-shadow: none;
   border-radius: 0;
-  border:0;
+  border: 0;
 }
 
 .modal-content {
@@ -981,17 +1170,7 @@ footer {
   }
 }
 
-
-
-/* close modal */
-/*.mod {
-  position: fixed;
-  top: 49px;
-  right: 63px;
-  width: 40px;
-  height: 24px;
-}*/
-.close{
+.close {
   opacity: 1;
   position: fixed;
   top: 49px;
@@ -1003,16 +1182,17 @@ footer {
     @include transition;
   }
   &:focus {
-    opacity:.5;
+    opacity: .5;
   }
-}
+}*/
+/*
 .back_close {
   position: static;
   width: auto;
-  height:auto;
+  height: auto;
   @include regular-text(700, 1em);
   text-shadow: none;
-  color:$text;
+  color: $text;
   cursor: pointer;
   text-decoration: underline;
   float: none;
@@ -1035,11 +1215,22 @@ footer {
 }
 
 .order_price {
-  @include regular-text(700,1.750em);
+  @include regular-text(700, 1.750em);
   color: $white;
   margin-bottom: 0;
   padding-left: 30px;
   position: relative;
   top: 20px;
 
+}*/
+
+/* FIXES */
+.padding-left-fix {
+  padding-left: 12px;
+  padding-top: 9px;
+  padding-right: 0px;
+}
+
+.padding-right-fix {
+  padding-right: 0;
 }

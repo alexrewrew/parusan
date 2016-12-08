@@ -73,6 +73,8 @@
   }
   .abox1, .abox2, .abox3 {
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   .abox1 img {
     width: 50%;
@@ -106,6 +108,22 @@
   }
   .footer_social {
     padding-left: 0;
+    li {
+      text-align: left;
+    }
+  }
+  .padding-left-fix {
+    padding: {
+      left:15px;
+      right:15px;
+      bottom:30px;
+      top:0;
+    }
+  }
+  .volta_copyright {
+    position: static;
+    text-align: center;
+    padding-bottom: 10px;
   }
   .menu_list, .menu_social {
     margin-left: 40px;
@@ -204,6 +222,13 @@
   .footer_social {
     padding-left: 34px;
   }
+  .main_menu {
+    width: 100%;
+  }
+  .abox1, .abox2, .abox3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
 
@@ -216,18 +241,19 @@
     top:40px;
     z-index: -1;
   }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
   .container {
-    width: 1034px;
+    width: 1018px;
   }
   .parallax_object1 {
     position: absolute;
     top: 162px;
-    left: 128px;
+    left: 127px;
     z-index: -1;
   }
   .parallax_object2 {
