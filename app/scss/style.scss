@@ -1,40 +1,16 @@
-/*VARIABLES */
-$text: #4C4C4C; //regular text color
-$head-text: #BABABA; //black text
-$a-gray: #F6F6F6; //light gray
-$b-gray: #CBCBCB; //light middle gray
-$c-gray: #CDCDCD; //hard gray
-$d-gray: #BABABA; //hard middle gray
-$font: 'Circe'; //main font
-$white: #fff;
-$a-green: #13b156;
-$b-green: #16a754;
-$c-green: #20DF71;
+@import "fonts";
+@import "vars";
+@import "mixins";
 
-/* MIXINS */
-@mixin transition { //transition property
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-@mixin regular-text($weight, $size) {
-  font: {
-    family: $font;
-    weight: $weight;
-    size: $size;
-    style: normal;
-    stretch: normal;
-  }
-}
 
 /* main styles */
 body {
   /*overflow-y: scroll;*/
+
   background: $white;
   @include regular-text(400, 16px);
   color: $text;
+
 }
 
 /* headers */
@@ -850,6 +826,16 @@ a.active_pan {
   color: $white;
 }
 
+a.active_pan.collapsed {
+  background: $a-gray;
+  color: $text;
+}
+
+a.active_pan.collapsed:hover {
+  background: $a-green;
+  color: $white;
+}
+
 .phase1 {
   margin-bottom: 53px;
   margin-top: 18px;
@@ -1022,11 +1008,10 @@ footer.container-fluid {
 }
 
 
-
 .arrow_up {
   display: none;
   position: fixed;
-  bottom: 160px;
+  bottom: 84px;
   right: 55px;
   background: rgba(0, 0, 0, 0.2);
   width: 56px;
@@ -1234,3 +1219,5 @@ footer.container-fluid {
 .padding-right-fix {
   padding-right: 0;
 }
+
+@import "style-responsive";

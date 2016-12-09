@@ -24,7 +24,8 @@ var gulp = require('gulp'), //ініціалізація gulp
 
 // Завдання для компіляції sass
 gulp.task('sass', function () {
-    return gulp.src('app/scss/*.scss') //пошук файлів з розширенням scss
+    return gulp.src('app/scss/style.scss') //пошук файлів з розширенням scss
+    // return gulp.src('app/scss/*.scss') //пошук файлів з розширенням scss
         .pipe(sass().on('error', sass.logError)) //вивід помилок
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
         .pipe(gulp.dest('app/css')) //вивід зкомпільованого файлу до теки css
@@ -45,16 +46,16 @@ gulp.task('scripts', function () {
 });
 
 //конкатинація та мініфікація css
-gulp.task('css-libs', function () {
-    return gulp.src([
-        'app/css/fonts.css',
-        'app/css/style.css',
-        'app/css/style-responsive.css',
-    ])
-        .pipe(concat('style.min.css'))
-        .pipe(cssnano())
-        .pipe(gulp.dest('app/css'));
-});
+/*gulp.task('css-libs', function () {
+ return gulp.src([
+ 'app/css/fonts.css',
+ 'app/css/style.css',
+ 'app/css/style-responsive.css',
+ ])
+ .pipe(concat('style.min.css'))
+ .pipe(cssnano())
+ .pipe(gulp.dest('app/css'));
+ });*/
 
 
 //завдання для browser-sync
@@ -86,7 +87,7 @@ gulp.task('img', function () {
 })
 
 //слідкування за змінами у проекті
-gulp.task('watch', ['browserSync', 'sass', 'scripts', 'css-libs'], function () { //запуск browser-sync та sass відслідковувачів
+gulp.task('watch', ['browserSync', 'sass', 'scripts'/*, 'css-libs'*/], function () { //запуск browser-sync та sass відслідковувачів
     gulp.watch('app/scss/**/*.scss', ['sass']); //пошук scss файлів
     gulp.watch('app/*.html', browserSync.reload); //пошук html файлів
     gulp.watch('app/js/**/*.js', browserSync.reload); //пошук js файлів
