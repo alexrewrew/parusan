@@ -421,7 +421,7 @@ hr {
 /* COLLAPSED MENU */
 .main_menu {
   position: fixed;
-  right: -1000px;
+  right: -1500px;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -477,12 +477,32 @@ hr {
         color: #20DF71; }
 
 /* JUMBOTRON */
-header {
-  background: url("../img/head-back.png") no-repeat center;
-  background-size: cover;
+header.container-fluid {
+  /*background: url("../img/head-back.png") no-repeat center;
+  background-size: cover;*/
   position: relative;
+  /*padding: {
+    top: 50px;
+    bottom: 106px;
+  }*/
+  padding-left: 0;
+  padding-right: 0; }
+
+.cont_front {
   padding-top: 50px;
   padding-bottom: 106px; }
+
+/* PARALLAX */
+#parallax {
+  background: #c8cdd7;
+  overflow: hidden;
+  position: absolute;
+  height: 553px;
+  width: 100%; }
+
+.parallax-layer {
+  position: absolute;
+  min-width: 1440px; }
 
 .lead_text {
   font-family: "Circe";
@@ -1097,8 +1117,11 @@ footer.container-fluid {
   .container-fluid {
     padding-left: 0;
     padding-right: 0; }
-  header {
-    padding-top: 44px; }
+  /*header {
+    padding-top: 44px;
+  }*/
+  #parallax {
+    height: 586px; }
   .parusan_logo {
     width: 75%; }
   .menu {

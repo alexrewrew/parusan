@@ -409,7 +409,7 @@ hr {
 /* COLLAPSED MENU */
 .main_menu {
   position: fixed;
-  right: -1000px;
+  right: -1500px;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -482,15 +482,40 @@ hr {
 
 /* JUMBOTRON */
 
-header {
-  background: url("../img/head-back.png") no-repeat center;
-  background-size: cover;
+header.container-fluid {
+  /*background: url("../img/head-back.png") no-repeat center;
+  background-size: cover;*/
   position: relative;
+  /*padding: {
+    top: 50px;
+    bottom: 106px;
+  }*/
+  padding: {
+    left:0;
+    right:0;
+  }
+}
+
+.cont_front {
   padding: {
     top: 50px;
     bottom: 106px;
   }
-;
+}
+
+/* PARALLAX */
+#parallax {
+  background: #c8cdd7;
+  overflow: hidden;
+  position: absolute;
+  height: 553px;
+  width: 100%;
+
+}
+
+.parallax-layer {
+  position: absolute;
+  min-width: 1440px;
 }
 
 .lead_text {

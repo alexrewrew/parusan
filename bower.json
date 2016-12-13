@@ -26,5 +26,8 @@
     "jquery-mousewheel": "^3.1.13",
     "smoothscroll-for-websites": "^1.4.5",
     "chosen": "^1.6.2"
+  },
+  "devDependencies": {
+    "jparallax": "^2.0.3"
   }
 }

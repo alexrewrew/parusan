@@ -43,25 +43,46 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!--<meta name="google-site-verification" content="guljr8q09kz2_OhCSSavGatC4dXMg9TaobRqSl-ETcY" />
+    <meta name="yandex-verification" content="66c42e74702329ba" />-->
+
     <link rel="stylesheet" type="text/css" href="package/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="package/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="package/chosen/chosen.css">
+    <link rel="stylesheet" type="text/css" href="package/jparallax/css/jquery.parallax.css">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!--[if lt IE 9]>
     <script src="package/html5shiv/dist/html5shiv.min.js"></script>
     <script src="package/respond/dest/respond.min.js"></script><![endif]-->
-</head>
-<body id="first">
 
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-86652645-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body id="first">
 <header class="container-fluid">
-    <div class="container">
+    <div class="parallax-viewport" id="parallax">
+        <div class="parallax-layer layer3"><img src="img/parallax/A-layer.png" alt=""></div>
+        <div class="parallax-layer layer2"><img src="img/parallax/B-layer.png" alt=""></div>
+        <div class="parallax-layer layer1"><img src="img/parallax/C-layer.png" alt=""></div>
+    </div>
+    <div class="container cont_front">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <img src="img/logo/logo-parusan.png" alt="" class="parusan_logo">
                 <p class="lead_text">Проти випадіння волосся допоможе Parusan</p>
-                <a class="button" href="#" target="_blank">Купити в аптеці</a>
+                <a class="button" href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank" onclick="ga('send', 'event', 'cat1', 'order1');" >Купити в аптеці</a>
                 <!--<a class="button" type="button" data-toggle="modal" data-target="#myModal">Купити в аптеці</a>-->
             </div>
         </div>
@@ -136,7 +157,7 @@
                             <!--<p class="price_box">750 грн</p>-->
                         </div>
                         <div class="col-xs-7 col-sm-8">
-                            <a href="#" target="_blank" class="button small_button">Купити
+                            <a href="https://www.add.ua/ua/stimul-shampun-parusan-ot-vypadenija-volos-200-ml.html" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order2');">Купити
                                 в аптеці</a><!--
                             <a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити
                                 в аптеці</a>-->
@@ -165,7 +186,7 @@
                     </div>
                     <div class="row order_row">
                         <div class="col-xs-7 col-sm-8">
-                            <a href="#" target="_blank" class="button small_button">Купити
+                            <a href="https://www.add.ua/ua/aktiv-tonik-parusan-ot-vypadenija-volos-200-ml.html" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order3');">Купити
                                 в аптеці</a><!--
                             <a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити
                                 в аптеці</a>-->
@@ -195,7 +216,8 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="action_box abox1">
                     <img src="img/icons/icon1.svg" alt="" onerror="this.src='img/icons/icon1.png'">
-                    <p>Стимулює кровообіг, пробуджує «сплячі» волосяні цибулини, живить їх та активує фазу росту нового волосся</p>
+                    <p>Стимулює кровообіг, пробуджує «сплячі» волосяні цибулини, живить їх та активує фазу росту нового
+                        волосся</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
@@ -208,7 +230,8 @@
                 <div class="action_box abox3">
                     <img src="img/icons/icon3.svg" alt="" onerror="this.src='img/icons/icon3.png'">
                     <p>
-                        Укріплює волосяні цибулини, зупиняє випадіння, покращує обмін речовин, відновлює еластичність волосся</p></div>
+                        Укріплює волосяні цибулини, зупиняє випадіння, покращує обмін речовин, відновлює еластичність
+                        волосся</p></div>
             </div>
         </div>
     </div>
@@ -228,7 +251,8 @@
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                   aria-expanded="true" aria-controls="collapseOne" class="active_pan"> Причини виникнення випадіння волосся
+                                   aria-expanded="true" aria-controls="collapseOne" class="active_pan"> Причини
+                                    виникнення випадіння волосся
                                     <i class="fa fa-angle-down accordion_angle"></i> </a>
                             </h4>
                         </div>
@@ -294,10 +318,13 @@
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
                              aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <p>Це природній процес від фази росту до випадіння. Проте, якщо їх більше, ніж 100, а волосся стає більш тонким і ламким, то це може свідчити про дифузне випадіння волосся.</p>
-                                    <p>На відміну від спадкового випадіння та облисіння, цей тип втрати волосся вирізняється рядом причин, як приклад:</p>
+                                <p>Це природній процес від фази росту до випадіння. Проте, якщо їх більше, ніж 100, а
+                                    волосся стає більш тонким і ламким, то це може свідчити про дифузне випадіння
+                                    волосся.</p>
+                                <p>На відміну від спадкового випадіння та облисіння, цей тип втрати волосся вирізняється
+                                    рядом причин, як приклад:</p>
 
-                                    <p>- гормональні порушення після вагітності<br>
+                                <p>- гормональні порушення після вагітності<br>
                                     - гормональні порушення під час менопаузи<br>
                                     - прийом медикаментів<br>
                                     - стрес.</p>
@@ -316,7 +343,7 @@
             <div class="col-xs-12 text-center">
                 <p>Дифузне випадіння волосся можна зупинити! Якщо знайти і вилікувати причину та регулярно користуватися
                     Parusan.</p>
-                <a href="#" target="_blank" class="button small_button">Купити в аптеці</a>
+                <a href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order4');">Купити в аптеці</a>
                 <!--<a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити в аптеці</a>-->
             </div>
         </div>
@@ -426,7 +453,8 @@
                     <div class="col-xs-12"><select name="" id="">
                         <option value="">1</option>
                         <option value="">2</option>
-                        <option value="">3</option></select></div>
+                        <option value="">3</option>
+                    </select></div>
                     <div class="col-xs-12"><a href="" class="button small_button">Перейти на сайт аптеки</a></div>
                 </div>
             </div>
@@ -539,6 +567,7 @@
 <script type="text/javascript" src="package/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="package/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="package/chosen/chosen.jquery.js"></script>
+<script type="text/javascript" src="package/jparallax/js/jquery.parallax.js"></script>
 <script type="text/javascript" src="js/scripts.min.js"></script>
 <!--<script type="text/javascript" src="js/contact-form.js"></script>-->
 
@@ -564,5 +593,13 @@
         });
     });
 </script>
+
+<script>
+    $('.layer2').parallax({xparallax: '100px', yparallax: '25px'});
+    $('.layer1').parallax({xparallax: '200px', yparallax: '50px'});
+    $('.layer3').parallax({xparallax: '300px', yparallax: '100px'});
+</script>
+
+
 </body>
 </html>
