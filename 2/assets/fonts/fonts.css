@@ -1,0 +1,74 @@
+/* Circe */
+
+@font-face
+{
+    font-family: 'Circe';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('Circe/Circe-Regular.eot');
+    src: url('Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('Circe/Circe-Regular.woff') format('woff'), url('Circe/Circe-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Circe';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('Circe/Circe-Bold.eot');
+    src: url('Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'), url('Circe/Circe-Bold.woff') format('woff'), url('Circe/Circe-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Circe';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('Circe/Circe-Light.eot');
+    src: url('Circe/Circe-Light.eot?#iefix') format('embedded-opentype'), url('Circe/Circe-Light.woff') format('woff'), url('Circe/Circe-Light.ttf') format('truetype');
+}
+
+
+/* Proxima Nova */
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('Proxima_Nova/ProximaNova-BoldIt.eot');
+    src: url('Proxima_Nova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'), url('Proxima_Nova/ProximaNova-BoldIt.woff') format('woff'), url('Proxima_Nova/ProximaNova-BoldIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('Proxima_Nova/ProximaNova-Bold.eot');
+    src: url('Proxima_Nova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('Proxima_Nova/ProximaNova-Bold.woff') format('woff'), url('Proxima_Nova/ProximaNova-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('Proxima_Nova/ProximaNova-RegularIt.eot');
+    src: url('Proxima_Nova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'), url('Proxima_Nova/ProximaNova-RegularIt.woff') format('woff'), url('Proxima_Nova/ProximaNova-RegularIt.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('Proxima_Nova/ProximaNova-Regular.eot');
+    src: url('Proxima_Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('Proxima_Nova/ProximaNova-Regular.woff') format('woff'), url('Proxima_Nova/ProximaNova-Regular.ttf') format('truetype');
+}
