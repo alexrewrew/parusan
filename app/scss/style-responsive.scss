@@ -158,7 +158,33 @@
     display: none;
   }
 
-
+  /* modal */
+  .order_from {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mod {
+    position: relative;
+    right: 15px;
+    top: -15px;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  .modal .button {
+    width: 100%;
+  }
+  .close {
+    right: 10px;
+  }
+  /**/
+  .modal-dialog {
+    width: 94%;
+    margin: 26% 10px 0;
+    .relative-select {
+      width: 100%;
+    }
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -241,6 +267,24 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .modal-dialog {
+    width: 90%;
+    margin-top: 20%;
+    .container {
+      width: 100%;
+    }
+    .button {
+      width: 70%;
+      min-width: 2px;
+    }
+  }
+  .relative-select {
+    width: 70%;
+  }
+  .modal-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
 
@@ -253,7 +297,24 @@
     top:40px;
     z-index: -1;
   }
-
+  .modal-dialog {
+    width: 90%;
+    margin-top: 15%;
+    .container {
+      width: 100%;
+    }
+    .button {
+      width: 70%;
+      min-width: 2px;
+    }
+  }
+  .relative-select {
+    width: 70%;
+  }
+  .modal-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -286,4 +347,8 @@
     right: 13px;
     z-index: -1;
   }
+  .modal-dialog {
+    margin: 13% auto;
+  }
+
 }

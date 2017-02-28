@@ -59,45 +59,59 @@
     <script src="package/respond/dest/respond.min.js"></script><![endif]-->
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-86652645-1', 'auto');
         ga('send', 'pageview');
 
     </script>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-   (function (d, w, c) {
-       (w[c] = w[c] || []).push(function() {
-           try {
-               w.yaCounter40602005 = new Ya.Metrika({
-                   id:40602005,
-                   clickmap:true,
-                   trackLinks:true,
-                   accurateTrackBounce:true,
-                   webvisor:true,
-                   trackHash:true
-               });
-           } catch(e) { }
-       });
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter40602005 = new Ya.Metrika({
+                        id: 40602005,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {
+                }
+            });
 
-       var n = d.getElementsByTagName("script")[0],
-           s = d.createElement("script"),
-           f = function () { n.parentNode.insertBefore(s, n); };
-       s.type = "text/javascript";
-       s.async = true;
-       s.src = "https://mc.yandex.ru/metrika/watch.js";
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-       if (w.opera == "[object Opera]") {
-           d.addEventListener("DOMContentLoaded", f, false);
-       } else { f(); }
-   })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/40602005" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/40602005" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body id="first">
@@ -112,9 +126,13 @@
             <div class="col-xs-12 col-sm-6">
                 <img src="img/logo/logo-parusan.png" alt="" class="parusan_logo">
                 <p class="lead_text">Проти випадіння волосся допоможе Parusan</p>
-                <a class="button" href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank" onclick="ga('send', 'event', 'cat1', 'order1');">Купити в аптеці</a>
-                <!--  yaCounter 40602005.reachGoal('ORDER1'); return true; -->
+                <a class="button modalTarget" href="#myModal" data-toggle="modal" data-target="#myModal"
+                   onclick="ga('send', 'event', 'cat1', 'order1');">Купити в аптеці</a>
+                <!--
+                <a class="button" href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank"
+                   onclick="ga('send', 'event', 'cat1', 'order1');">Купити в аптеці</a>-->
             </div>
+
         </div>
         <div class="arrow_down">
             <a href="#second" class="smooth"><img src="img/icons/angle-down3.svg" alt=""
@@ -183,7 +201,8 @@
                         <div class="col-xs-5 col-sm-4">
                         </div>
                         <div class="col-xs-7 col-sm-8">
-                            <a href="https://www.add.ua/ua/stimul-shampun-parusan-ot-vypadenija-volos-200-ml.html" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order2'); yaCounter 40602005.reachGoal('ORDER2'); return true;">Купити
+                            <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button small_button modalTarget"
+                               onclick="ga('send', 'event', 'cat1', 'order2'); yaCounter 40602005.reachGoal('ORDER2'); return true;">Купити
                                 в аптеці</a>
                         </div>
                     </div>
@@ -210,7 +229,8 @@
                     </div>
                     <div class="row order_row">
                         <div class="col-xs-7 col-sm-8">
-                            <a href="https://www.add.ua/ua/aktiv-tonik-parusan-ot-vypadenija-volos-200-ml.html" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order3'); yaCounter 40602005.reachGoal('ORDER3'); return true;">Купити
+                            <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button small_button modalTarget"
+                               onclick="ga('send', 'event', 'cat1', 'order3'); yaCounter 40602005.reachGoal('ORDER3'); return true;">Купити
                                 в аптеці</a><!--
                             <a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити
                                 в аптеці</a>-->
@@ -367,7 +387,10 @@
             <div class="col-xs-12 text-center">
                 <p>Дифузне випадіння волосся можна зупинити! Якщо знайти і усунути причину та регулярно користуватися
                     Parusan.</p>
-                <a href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank" class="button small_button" onclick="ga('send', 'event', 'cat1', 'order4'); yaCounter 40602005.reachGoal('ORDER4'); return true;">Купити в аптеці</a>
+                <a href="#myModal" data-toggle="modal" data-target="#myModal"
+                   class="button small_button modalTarget"
+                   onclick="ga('send', 'event', 'cat1', 'order4'); yaCounter 40602005.reachGoal('ORDER4'); return true;">Купити
+                    в аптеці</a>
                 <!--<a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити в аптеці</a>-->
             </div>
         </div>
@@ -392,9 +415,11 @@
             </p></div>
             <div class="col-xs-12 col-sm-4 text-center">
                 <ul class="footer_social">
-                    <li><a href="https://www.facebook.com/PharmatheissCosmeticsUkraine" target="_blank"><i class="fa fa-facebook-square"></i> <span class="social_text">Facebook</span></a>
+                    <li><a href="https://www.facebook.com/PharmatheissCosmeticsUkraine" target="_blank"><i
+                            class="fa fa-facebook-square"></i> <span class="social_text">Facebook</span></a>
                     </li>
-                    <li><a href="http://instagram.com/pharmatheiss_cosmetics_ua" target="_blank"><i class="fa fa-instagram"></i> <span class="social_text">Instagram</span></a></li>
+                    <li><a href="http://instagram.com/pharmatheiss_cosmetics_ua" target="_blank"><i
+                            class="fa fa-instagram"></i> <span class="social_text">Instagram</span></a></li>
                 </ul>
             </div>
         </div>
@@ -407,9 +432,7 @@
 
                     <svg class="volta_logo" width="63px" height="15px" viewBox="0 0 63 15" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
                         <title>Fill 1</title>
-                        <desc>Created with Sketch.</desc>
                         <defs></defs>
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Large-Device-Desktops" transform="translate(-1173.000000, -4747.000000)"
@@ -439,8 +462,10 @@
                 <li><a href="#fifth" class="smooth">Про випадіння</a></li>
             </ul>
             <ul class="menu_social">
-                <li><a href="https://www.facebook.com/PharmatheissCosmeticsUkraine" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                <li><a href="http://instagram.com/pharmatheiss_cosmetics_ua" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/PharmatheissCosmeticsUkraine" target="_blank"><i
+                        class="fa fa-facebook-square"></i></a></li>
+                <li><a href="http://instagram.com/pharmatheiss_cosmetics_ua" target="_blank"><i
+                        class="fa fa-instagram"></i></a></li>
             </ul>
         </div>
     </div>
@@ -463,127 +488,41 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
+
         <div class="modal-content" id="modal_top">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <div class="mod">
                     <img src="img/icons/close.svg" onerror="this.src='img/icons/close.png'" alt="">
                 </div>
             </button>
-            <div class="container">
+
+            <div id="modal-preloader">
+                <div id="hellopreloader">
+                    <div id="hellopreloader_preload"></div>
+                </div>
+            </div>
+
+            <div class="container" id="modal-show" style="opacity:0;">
                 <div class="row">
                     <div class="col-xs-12"><h2>Оберіть аптеку</h2></div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-xs-12"><select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select></div>
-                    <div class="col-xs-12"><a href="" class="button small_button">Перейти на сайт аптеки</a></div>
+                    <div class="col-xs-12">
+                        <div class="relative-select">
+                            <select name="" id="modalSelect">
+                            </select>
+                            <div class="select-caret"><i class="fa fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <a href="" class="button small_button modal-button" target="_blank">Перейти на сайт аптеки</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" id="modal_top">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <div class="mod">
-                    <img src="img/icons/close.svg" onerror="this.src='img/icons/close.png'" alt="">
-                </div>
-            </button>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h2>Оформлення замовлення</h2>
-                    </div>
-                </div>
-                <p class="text-center" id="send_success">Замовлення успішно зроблено <a type="button"
-                                                                                        class="close back_close"
-                                                                                        data-dismiss="modal"
-                                                                                        aria-label="Close">Повернутись</a>
-                </p>
-                <p class="text-center" id="send_error">Сталася помилка. Первірте введені дані</p>
-                <form action="" class="order_from" id="contact-form">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="text" placeholder="Ім'я" id="name"><input type="text" placeholder="Прізвище"
-                                                                                   id="sername"></div>
-                        <div class="col-xs-12 col-sm-6">
-                            <input id="tel" type="tel" minlength="10" name="phone" placeholder="Телефон"
-                                   title="Формат вводу (050) 121-34-57"><input type="email" placeholder="E-mail"
-                                                                               id="email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <img src="img/product.png" alt="" class="img-responsive product_img">
-                            <div class="row">
-                                <div class="col-xs-6"><p class="order_price">350 грн</p></div>
-                                <div class="col-xs-6">
-                                    <div class="number">
-                                        <input type="text" placeholder="Кількість" value="0" id="pm1" readonly/>
-                                        <div class="action">
-                                            <span class="minus1"><span>-</span></span>
-                                            <span class="plus1"><span>+</span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <img src="img/product.png" alt="" class="img-responsive product_img">
-                            <div class="row">
-                                <div class="col-xs-6"><p class="order_price">700 грн</p></div>
-                                <div class="col-xs-6">
-                                    <div class="number">
-                                        <input type="text" placeholder="Кількість" value="0" id="pm2" readonly/>
-                                        <div class="action">
-                                            <span class="minus2"><span>-</span></span>
-                                            <span class="plus2"><span>+</span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <p>
-                                <span class="count_text">Кількість</span><input type="text" class="count" value="0"
-                                                                                readonly id="count">
-                            </p></div>
-                        <div class="col-xs-12 col-sm-6">
-                            <p>
-                                <span class="count_price_text">Ціна</span><input type="text" value="0"
-                                                                                 class="count_price" readonly
-                                                                                 id="count_price"><span
-                                    class="uah">грн</span>
-                            </p></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <select name="" id="dost">
-                                <option value="" disabled selected>Спосіб доставки</option>
-                                <option value="Нова Пошта">Нова Пошта</option>
-                                <option value="Кур'єром">Кур'єром</option>
-                                <option value="Самовивіз">Самовивіз</option>
-                            </select></div>
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="text" placeholder="Адреса" id="adress"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <button class="button" type="submit" id="okform">Замовити</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>-->
 
 
 <script type="text/javascript" src="package/jquery/dist/jquery.min.js"></script>
@@ -592,7 +531,7 @@
 <script type="text/javascript" src="package/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="package/chosen/chosen.jquery.js"></script>
 <script type="text/javascript" src="package/jparallax/js/jquery.parallax.js"></script>
-<script type="text/javascript" src="js/scripts.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 <!--<script type="text/javascript" src="js/contact-form.js"></script>-->
 
 <!-- page scripts -->
