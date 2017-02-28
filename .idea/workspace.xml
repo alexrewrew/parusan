@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37442acd-0c17-404e-9176-d957a5d83ae8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/style.css" afterPath="$PROJECT_DIR$/app/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/icons/phases/phase1.svg" afterPath="$PROJECT_DIR$/app/img/icons/phases/phase1.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.js" afterPath="$PROJECT_DIR$/app/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/style-responsive.scss" afterPath="$PROJECT_DIR$/app/scss/style-responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/style.scss" afterPath="$PROJECT_DIR$/app/scss/style.scss" />
-    </list>
+    <list default="true" id="37442acd-0c17-404e-9176-d957a5d83ae8" name="Default" comment="" />
     <ignored path="parusan.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -249,7 +240,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hyaluron" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dmsu" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -336,12 +327,12 @@
       <workItem from="1483021329124" duration="523000" />
       <workItem from="1484576185731" duration="1084000" />
       <workItem from="1488206110105" duration="104000" />
-      <workItem from="1488285526497" duration="1275000" />
+      <workItem from="1488285526497" duration="1424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102313000" />
+    <option name="totallyTimeSpent" value="102462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
