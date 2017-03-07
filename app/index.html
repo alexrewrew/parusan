@@ -126,7 +126,7 @@
             <div class="col-xs-12 col-sm-6">
                 <img src="img/logo/logo-parusan.png" alt="" class="parusan_logo">
                 <p class="lead_text">Проти випадіння волосся допоможе Parusan</p>
-                <a class="button modalTarget" href="#myModal" data-toggle="modal" data-target="#myModal"
+                <a class="button modalTarget" data-id="link" href="#myModal" data-toggle="modal" data-target="#myModal"
                    onclick="ga('send', 'event', 'cat1', 'order1');">Купити в аптеці</a>
                 <!--
                 <a class="button" href="https://www.add.ua/ua/catalogsearch/result/?q=Parusan" target="_blank"
@@ -201,7 +201,7 @@
                         <div class="col-xs-5 col-sm-4">
                         </div>
                         <div class="col-xs-7 col-sm-8">
-                            <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button small_button modalTarget"
+                            <a href="#myModal" data-toggle="modal" data-id="link1" data-target="#myModal" class="button small_button modalTarget"
                                onclick="ga('send', 'event', 'cat1', 'order2'); yaCounter 40602005.reachGoal('ORDER2'); return true;">Купити
                                 в аптеці</a>
                         </div>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="row order_row">
                         <div class="col-xs-7 col-sm-8">
-                            <a href="#myModal" data-toggle="modal" data-target="#myModal" class="button small_button modalTarget"
+                            <a href="#myModal" data-toggle="modal" data-id="link2" data-target="#myModal" class="button small_button modalTarget"
                                onclick="ga('send', 'event', 'cat1', 'order3'); yaCounter 40602005.reachGoal('ORDER3'); return true;">Купити
                                 в аптеці</a><!--
                             <a type="button" data-toggle="modal" data-target="#myModal" class="button small_button">Купити
@@ -248,7 +248,6 @@
         </div>
     </div>
 </section>
-<div class="separator_small">&nbsp;</div>
 <section class="container-fluid action_cont" id="fourth">
     <div class="container">
         <div class="row">
@@ -387,7 +386,7 @@
             <div class="col-xs-12 text-center">
                 <p>Дифузне випадіння волосся можна зупинити! Якщо знайти і усунути причину та регулярно користуватися
                     Parusan.</p>
-                <a href="#myModal" data-toggle="modal" data-target="#myModal"
+                <a href="#myModal" data-toggle="modal" data-target="#myModal" data-id="link"
                    class="button small_button modalTarget"
                    onclick="ga('send', 'event', 'cat1', 'order4'); yaCounter 40602005.reachGoal('ORDER4'); return true;">Купити
                     в аптеці</a>
@@ -509,8 +508,7 @@
                 <div class="row text-center">
                     <div class="col-xs-12">
                         <div class="relative-select">
-                            <select name="" id="modalSelect">
-                            </select>
+                            <select name="" id="modalSelect"></select>
                             <div class="select-caret"><i class="fa fa-caret-down"></i>
                             </div>
                         </div>

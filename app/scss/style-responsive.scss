@@ -185,6 +185,12 @@
       width: 100%;
     }
   }
+  .accordion_cont {
+    padding-top: 75px;
+  }
+  .select-caret {
+    display: block;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -323,7 +329,7 @@
   .container {
     width: 1018px;
   }
-  .parallax_object1 {
+  /*.parallax_object1 {
     position: absolute;
     top: 162px;
     left: 127px;
@@ -346,9 +352,36 @@
     top: 403px;
     right: 13px;
     z-index: -1;
+  }*/
+  .parallax_object1 {
+    position: absolute;
+    left: 127px;
+    z-index: -1;
+    top: 51px;
+  }
+  .parallax_object2 {
+    position: absolute;
+    left: 16px;
+    z-index: -1;
+    top:186px;
+  }
+  .parallax_object3 {
+    position: absolute;
+    left: 11px;
+    z-index: -1;
+    top:50px;
+  }
+  .parallax_object4 {
+    position: absolute;
+    right: 13px;
+    z-index: -1;
+    top: 50px;
   }
   .modal-dialog {
     margin: 13% auto;
+  }
+  .relative-select .chosen-with-drop .chosen-drop {
+    width: 101%;
   }
 
 }

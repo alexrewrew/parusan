@@ -1,0 +1,289 @@
+/**/
+
+a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/**/
+
+header {
+    height: 80px;
+}
+
+
+/**/
+
+#title-page {
+    margin-top: 80px;
+}
+
+#title-page h2 {
+    line-height: 1;
+    padding: 55px 0 60px 0;
+}
+
+
+/**/
+
+#carousel {
+    margin-top: 80px;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.owl-dots .owl-dot {
+    display: inline-block;
+}
+
+.owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #D0DBE2;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.owl-dot.active span,
+.owl-dot:hover span {
+    background: #0d7f3e;
+}
+
+.owl-nav {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+.owl-prev {
+    position: absolute;
+    left: 15px;
+    background: #323A45;
+    width: 37px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.owl-next {
+    position: absolute;
+    right: 15px;
+    background: #323A45;
+    width: 37px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background: #0d7f3e;
+    color: #fff;
+}
+
+#carousel img {
+    /*height: 750px;*/
+}
+
+#carousel h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 52px;
+    text-align: left;
+    color: #0d7f3e;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: 'Gotham Pro';
+    line-height: 1.2;
+    font-size: 30px;
+    padding: 15px 45px 15px 15px;
+}
+
+
+/**/
+
+#intro-box {
+    padding: 50px 0 50px;
+    color: #fff;
+}
+
+.drop_box {
+    padding-top: 28px;
+}
+
+#intro-box h3 {
+    font-size: 20px;
+}
+
+.box p {
+    text-align: center;
+}
+
+#latest-work h3 {
+    font-size: 26px;
+}
+
+#content.comanda {
+    padding: 75px 0 90px;
+}
+
+
+/**/
+
+nav#menu #menu-nav li {
+    padding: 0;
+}
+
+nav#menu #menu-nav li a {
+    padding: 0 15px;
+    font-weight: 400;
+    line-height: 80px;
+    font-size: 14px;
+}
+
+#contact-form input {
+    width: 100%;
+}
+
+.producator {
+    padding-top: 20px;
+}
+
+#contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+
+/**/
+
+header #logo a {
+    line-height: 76px;
+}
+
+header #logo a:hover {
+    opacity: 0.7;
+}
+
+
+/**/
+
+#content {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.decision {
+    padding-top: 20px;
+}
+
+.gray_h h3,
+gray_h h2 {
+    color: #b8b8b8;
+    font-weight: 500;
+}
+
+/**/
+#contact-form .submit {
+    background: #0d7f3e;
+}
+
+#contact-form .submit:hover {
+    background: #323A45;
+}
+
+/**/
+.box {
+    cursor:auto;
+}
+.box img {
+    margin-bottom: 30px;
+}
+.producator p {
+    margin-bottom: 10px;
+}
+.producator img {
+    margin-bottom: 20px;
+}
+.box_min img {
+    width: 100px;
+}
+
+button {
+    border: none;
+}
+
+.send_success{
+    display: none;
+    color: #0d7f3e;
+}
+.send_error {
+    display: none;
+    color: red;
+}
+nav#menu #menu-nav li a.order_button {
+    background: #fff;
+    color: #0d7f3e;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 50px;
+    padding: 0 31px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+nav#menu #menu-nav li a.order_button:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 767px) {
+    
+    #carousel h2 {
+        font-size: 12px;
+    }
+    #carousel {
+        margin-top: 0;
+    }
+    #title-page {
+        margin-top: 0;
+    }
+    .drop_box {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}

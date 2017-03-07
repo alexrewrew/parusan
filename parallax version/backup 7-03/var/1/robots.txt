@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /.git
+Disallow: *?
+
+Host: parusan.com.ua

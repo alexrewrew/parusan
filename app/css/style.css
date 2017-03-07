@@ -546,8 +546,8 @@ header.container-fluid {
 
 /* parusan container */
 .parusan_cont {
-  padding-top: 96px;
-  padding-bottom: 175px; }
+  padding-top: 76px;
+  padding-bottom: 190px; }
 
 .white_box {
   background: #fff;
@@ -674,7 +674,7 @@ header.container-fluid {
 /* ACTION */
 .action_cont {
   background: #13b156;
-  padding-top: 46px;
+  padding-top: 36px;
   padding-bottom: 88px; }
   .action_cont h2 {
     color: #fff; }
@@ -720,6 +720,7 @@ header.container-fluid {
 
 /* accordion */
 .accordion_cont {
+  padding-top: 120px;
   padding-bottom: 118px; }
 
 .accordion_row {
@@ -1163,11 +1164,11 @@ select {
 
 .chosen-container .chosen-results li.highlighted {
   background: #fff;
-  color: #005D8C; }
+  color: #13b156; }
 
 .chosen-container .chosen-results li.active-result:hover {
   background: #fff;
-  color: #005D8C; }
+  color: #13b156; }
 
 .chosen-container-single .chosen-single {
   border: none;
@@ -1323,7 +1324,11 @@ select {
     width: 94%;
     margin: 26% 10px 0; }
     .modal-dialog .relative-select {
-      width: 100%; } }
+      width: 100%; }
+  .accordion_cont {
+    padding-top: 75px; }
+  .select-caret {
+    display: block; } }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1420,25 +1425,51 @@ select {
 @media (min-width: 1200px) {
   .container {
     width: 1018px; }
-  .parallax_object1 {
+  /*.parallax_object1 {
     position: absolute;
     top: 162px;
     left: 127px;
-    z-index: -1; }
+    z-index: -1;
+  }
   .parallax_object2 {
     position: absolute;
     top: 300px;
     left: 16px;
-    z-index: -1; }
+    z-index: -1;
+  }
   .parallax_object3 {
     position: absolute;
     top: 285px;
     left: 11px;
-    z-index: -1; }
+    z-index: -1;
+  }
   .parallax_object4 {
     position: absolute;
     top: 403px;
     right: 13px;
-    z-index: -1; }
+    z-index: -1;
+  }*/
+  .parallax_object1 {
+    position: absolute;
+    left: 127px;
+    z-index: -1;
+    top: 51px; }
+  .parallax_object2 {
+    position: absolute;
+    left: 16px;
+    z-index: -1;
+    top: 186px; }
+  .parallax_object3 {
+    position: absolute;
+    left: 11px;
+    z-index: -1;
+    top: 50px; }
+  .parallax_object4 {
+    position: absolute;
+    right: 13px;
+    z-index: -1;
+    top: 50px; }
   .modal-dialog {
-    margin: 13% auto; } }
+    margin: 13% auto; }
+  .relative-select .chosen-with-drop .chosen-drop {
+    width: 101%; } }

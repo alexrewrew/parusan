@@ -566,8 +566,8 @@ header.container-fluid {
 /* parusan container */
 .parusan_cont {
   padding: {
-    top: 96px;
-    bottom: 175px;
+    top: 76px;
+    bottom: 190px;
   }
 }
 
@@ -723,7 +723,7 @@ header.container-fluid {
 .action_cont {
   background: $a-green;
   padding: {
-    top: 46px;
+    top: 36px;
     bottom: 88px;
   }
   h2 {
@@ -784,6 +784,7 @@ header.container-fluid {
 
 /* accordion */
 .accordion_cont {
+  padding-top: 120px;
   padding-bottom: 118px;
 }
 
@@ -1303,12 +1304,12 @@ select {
 
 .chosen-container .chosen-results li.highlighted {
   background: $white;
-  color: #005D8C;
+  color: $a-green;
 }
 
 .chosen-container .chosen-results li.active-result:hover {
   background: $white;
-  color: #005D8C;
+  color: $a-green;
 }
 
 .chosen-container-single .chosen-single {

@@ -1,16 +1,5 @@
 $(document).ready(function () {
 
-    /*$(window).on('load resize', function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 500) {
-                $("#nav-icon").addClass('nav-down');
-                $(".arrow_up").fadeIn('slow');
-            } else {
-                $("#nav-icon").removeClass('nav-down');
-                $(".arrow_up").fadeOut('fast');
-            }
-        });
-    });*/
     //menu
     $('.menu').click(function () {
         $('#nav-icon').toggleClass('open');
@@ -45,7 +34,7 @@ $(document).ready(function () {
         }, 1500);
     });
     // parallax
-    if ($(window).width() > '1200') {
+    /*if ($(window).width() > '1200') {
 
         $.fn.moveIt = function () {
             var $window = $(window);
@@ -71,7 +60,7 @@ $(document).ready(function () {
     };
     $(function () {
         $('[data-scroll-speed]').moveIt();
-    });
+    });*/
 
     // accordion
     $('.panel-title > a').click(function () {
@@ -81,10 +70,11 @@ $(document).ready(function () {
     });
 
     $(".modalTarget").click(function () {
-        var gid = $(this).parent().attr("id");
+        var gid = $(this).attr("data-id");
+
         if (gid != "") {
             // ID of the Google Spreadsheet
-            var spreadsheetID = "1F9VFCkJ3x0BQ3_ZCRpVtWlQLMM3vGZjnmJpBxSPqDGU";
+            var spreadsheetID = "1v9Z2XbZvLRrjazZG1wbaOwiKg9j_7LmuEGNKeXJQ_nY";
 
             // Make sure it is public or set to Anyone with link can view
             var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
@@ -96,13 +86,13 @@ $(document).ready(function () {
                 var entry = data.feed.entry;
 
                 if (entry.length > 0) {
-                    var nameVar = "gsx$link" + gid;
+                    var nameVar = "gsx$" + gid;
 
                     $(".modal-button").attr("href", entry[0][nameVar]['$t']);
 
                     $(entry).each(function () {
                         if (this[nameVar]['$t'] != "") {
-                            options += '<option value=' + this[nameVar]['$t'] + '>' + this.gsx$name.$t + '</option>';
+                            options += "<option value='" + this[nameVar]['$t'] + "'>" + this.gsx$name.$t + "</option>";
                         }
                     });
                 } else {
@@ -123,7 +113,6 @@ $(document).ready(function () {
         }
     });
 
-    $("#modalSelect").chosen({disable_search: true, width: "100%", scroll_to_highlighted: false});
     $("#modalSelect").change(function () {
         var val = $(this).val();
         $(".modal-button").attr("href", val);

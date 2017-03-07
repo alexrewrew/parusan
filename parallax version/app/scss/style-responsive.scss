@@ -1,0 +1,354 @@
+/* Extra small devices (phones, less than 768px) */
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container-fluid {
+    padding: {
+      left: 0;
+      right: 0;
+    }
+  }
+  /*header {
+    padding-top: 44px;
+  }*/
+  #parallax {
+    height: 586px;
+  }
+  .parusan_logo {
+    width: 75%;
+  }
+  .menu {
+    right: 15px;
+  }
+  .main_menu {
+    width: 100%;
+  }
+  .lead_text {
+    margin-right: 0;
+  }
+  .button {
+    min-width: 100%;
+  }
+  .arrow_down {
+    right: 15px;
+  }
+  .parallax_object1 {
+    display: none;
+  }
+  .parallax_object2 img {
+    width: 100%;
+  }
+  .arrow_up {
+    right: 15px;
+    bottom: 15px
+  }
+  .parusan_cont {
+    padding-bottom: 75px;
+  }
+  .white_box {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+  .arrow_down_small {
+    right: auto;
+  }
+  .parallax_object3 img {
+    width: 100%;
+  }
+  .separator_big {
+    height: 50px;
+  }
+  .gray_line {
+    top: 0;
+  }
+  .parallax_object4 img {
+    width: 100%;
+  }
+  .left_box .price_box {
+    margin-left: 0;
+  }
+  .action_row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .abox1, .abox2, .abox3 {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .abox1 img {
+    width: 50%;
+  }
+  .abox2 img {
+    width: 50%;
+  }
+  .abox3 img {
+    width: 50%;
+  }
+  .action_box {
+    padding-right: 0;
+  }
+  .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .accordion_angle {
+    right:20px;
+  }
+  .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .order_cont p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .importer {
+    padding-left: 0;
+  }
+  .footer_social {
+    padding-left: 0;
+    li {
+      text-align: left;
+    }
+  }
+  .padding-left-fix {
+    padding: {
+      left:15px;
+      right:15px;
+      bottom:30px;
+      top:0;
+    }
+  }
+  .volta_copyright {
+    position: static;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .menu_list, .menu_social {
+    margin-left: 40px;
+  }
+  /* modal */
+  .order_from {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mod {
+    position: relative;
+    right: 15px;
+    top:auto;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  .modal .button {
+    width: 100%;
+  }
+  .close {
+    position: static;
+  }
+  /**/
+  .order_row .button {
+    left:0;
+  }
+  .gray_plashka {
+    display: none;
+  }
+
+  /* modal */
+  .order_from {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mod {
+    position: relative;
+    right: 15px;
+    top: -15px;
+  }
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  .modal .button {
+    width: 100%;
+  }
+  .close {
+    right: 10px;
+  }
+  /**/
+  .modal-dialog {
+    width: 94%;
+    margin: 26% 10px 0;
+    .relative-select {
+      width: 100%;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .parallax_object1 {
+    display: none;
+  }
+  .parallax_object2 img {
+    width: 100%;
+  }
+  .arrow_down_small {
+    right: 30px;
+  }
+  .parusan_cont {
+    padding-bottom: 75px;
+  }
+  .parallax_object3 img {
+    width: 100%;
+  }
+  .white_box {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .button {
+    min-width:100%;
+  }
+  .separator_big {
+    height: 100px;
+  }
+  .copy_row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .parallax_object4 img {
+    width: 100%;
+  }
+  .left_box {
+    padding-right: 0;
+  }
+  .left_box .price_box {
+    margin-left: 0;
+  }
+  .gray_line {
+    top:0;
+  }
+  .action_row {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .accordion_angle {
+    right: 40px;
+  }
+  footer.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer.container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .importer {
+    padding-left: 0;
+  }
+  .footer_social {
+    padding-left: 34px;
+  }
+  .main_menu {
+    width: 100%;
+  }
+  .abox1, .abox2, .abox3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-dialog {
+    width: 90%;
+    margin-top: 20%;
+    .container {
+      width: 100%;
+    }
+    .button {
+      width: 70%;
+      min-width: 2px;
+    }
+  }
+  .relative-select {
+    width: 70%;
+  }
+  .modal-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .parallax_object4 {
+    position: absolute;
+    right:0;
+    top:40px;
+    z-index: -1;
+  }
+  .modal-dialog {
+    width: 90%;
+    margin-top: 15%;
+    .container {
+      width: 100%;
+    }
+    .button {
+      width: 70%;
+      min-width: 2px;
+    }
+  }
+  .relative-select {
+    width: 70%;
+  }
+  .modal-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1018px;
+  }
+  .parallax_object1 {
+    position: absolute;
+    top: 162px;
+    left: 127px;
+    z-index: -1;
+  }
+  .parallax_object2 {
+    position: absolute;
+    top: 300px;
+    left: 16px;
+    z-index: -1;
+  }
+  .parallax_object3 {
+    position: absolute;
+    top: 285px;
+    left: 11px;
+    z-index: -1;
+  }
+  .parallax_object4 {
+    position: absolute;
+    top: 403px;
+    right: 13px;
+    z-index: -1;
+  }
+  .modal-dialog {
+    margin: 13% auto;
+  }
+
+}
